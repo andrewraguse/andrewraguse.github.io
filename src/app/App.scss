@@ -35,7 +35,7 @@ body {
   }
 }
 
-//background themes for light and dark mode
+//background themes for light and dark mode1;
 .stars {
   background-size: cover;
   position: absolute;
@@ -52,7 +52,7 @@ body {
 }
 
 .stars-light {
-  background: var(--light-background) repeat;
+  background: var(--light-background) url("/starry-night-flowers.png") repeat;
 }
 
 .moon-sun {
@@ -142,10 +142,9 @@ body {
   background: transparent url("/starry-night-clouds3-orange.png") repeat-x;
 }
 
-.twinkle-dark {
+.twinkle {
   width: 10000px;
   height: 100%;
-  background: transparent url("/starry-night-twinkle.png") repeat-x;
   background-size: 2000px;
   position: absolute;
   top: 0;
@@ -157,8 +156,12 @@ body {
   animation: move-background-bounce 100s linear infinite;
 }
 
+.twinkle-dark {
+  background: transparent url("/starry-night-twinkle.png") repeat-x;
+}
+
 .twinkle-light {
-  visibility: hidden;
+  background: transparent url("/starry-night-twinkle-day.png") repeat-x;
 }
 
 //light-dark mode toggler styles
