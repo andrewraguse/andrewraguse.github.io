@@ -1,0 +1,190 @@
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+//background animations
+@keyframes move-background {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes move-background-bounce {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes move-background-10 {
+  from {
+    transform: translateX(-10%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+//background themes for light and dark mode
+.stars {
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: block;
+  z-index: 0;
+}
+
+.stars-dark {
+  background: var(--dark-background) url("/starry-night-70.png") repeat;
+}
+
+.stars-light {
+  background: var(--light-background) repeat;
+}
+
+.moon-sun {
+  height: 100%;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 70%;
+  left: 80%;
+  z-index: 0;
+}
+
+.moon-sun-light {
+  width: 400px;
+  background-size: 400px;
+  background: transparent url("/starry-night-sun.png") no-repeat;
+}
+
+.moon-sun-dark {
+  width: 400px;
+  background-size: 400px;
+  background: transparent url("/starry-night-moon.png") no-repeat;
+}
+
+.clouds1 {
+  width: 10000px;
+  height: 100%;
+  background-size: 1800px;
+  overflow: hidden;
+  position: absolute;
+  top: 12%;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+
+  animation: move-background 500s linear infinite;
+}
+
+.clouds1-dark {
+  background: transparent url("/starry-night-clouds1.png") repeat-x;
+}
+
+.clouds1-light {
+  background: transparent url("/starry-night-clouds1-orange.png") repeat-x;
+}
+
+.clouds2 {
+  width: 10000px;
+  height: 100%;
+  background-size: 1800px;
+  overflow: hidden;
+  position: absolute;
+  right: 0;
+  top: 46%;
+  bottom: 0;
+  z-index: 0;
+
+  animation: move-background-10 700s linear infinite;
+}
+
+.clouds2-dark {
+  background: transparent url("/starry-night-clouds2.png") repeat-x;
+}
+
+.clouds2-light {
+  background: transparent url("/starry-night-clouds2-orange.png") repeat-x;
+}
+
+.clouds3 {
+  width: 10000px;
+  height: 100%;
+  background-size: 1500px;
+  overflow: hidden;
+  position: absolute;
+  top: 1%;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+
+  animation: move-background 1000s linear infinite;
+}
+
+.clouds3-dark {
+  background: transparent url("/starry-night-clouds3.png") repeat-x;
+}
+
+.clouds3-light {
+  background: transparent url("/starry-night-clouds3-orange.png") repeat-x;
+}
+
+.twinkle-dark {
+  width: 10000px;
+  height: 100%;
+  background: transparent url("/starry-night-twinkle.png") repeat-x;
+  background-size: 2000px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 0;
+
+  animation: move-background-bounce 100s linear infinite;
+}
+
+.twinkle-light {
+  visibility: hidden;
+}
+
+//light-dark mode toggler styles
+
+.light-dark-toggle {
+  position: fixed;
+  bottom: -120px;
+  right: -120px;
+}
+
+.toggle-border-dark {
+  position: absolute;
+  height: 50px;
+  width: 80px;
+  bottom: 32px;
+  right: 47px;
+  border-radius: 50px;
+  background-color: var(--dark-background);
+}
+
+.toggle-border-light {
+  position: absolute;
+  height: 50px;
+  width: 80px;
+  bottom: 32px;
+  right: 47px;
+  border-radius: 50px;
+  background-color: var(--light-background);
+}

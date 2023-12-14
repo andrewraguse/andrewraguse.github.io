@@ -1,0 +1,63 @@
+:root {
+  --font-size-lg: 60px;
+  --font-size-md: 40px;
+  --font-size-sm: 20px;
+  --font-size-xsm: 16px;
+
+  --primary-white: #f4faff;
+  --primary-black: #16262e;
+  --dark-background: #264067;
+  --dark-background-secondary: #3e638d;
+  --light-background: #fcb040;
+  --light-background-secondary: #eb7931;
+}
+
+$primary: #264067;
+$secondary: #f4faff;
+$light: #eb7931;
+$dark: #3e638d;
+
+/*"primary":    shift-color($primary, $table-bg-scale),
+"secondary":  shift-color($secondary, $table-bg-scale),
+"success":    shift-color($success, $table-bg-scale),
+"info":       shift-color($info, $table-bg-scale),
+"warning":    shift-color($warning, $table-bg-scale),
+"danger":     shift-color($danger, $table-bg-scale),
+"light":      $light,
+"dark":       $dark,
+
+$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
+$font-family-serif:      lostar, Georgia, "Times New Roman", Times, serif !default;
+$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:       $font-family-sans-serif !default;
+*/
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
+h1 {
+  font-family: Paytone_One;
+  font-size: var(--font-size-lg);
+  color: var(--primary-white);
+}
+
+p {
+  font-size: var(--font-size-sm);
+  font-family: Niramit;
+  color: var(--primary-white);
+}
+
+a {
+  font-size: var(--font-size-sm);
+  font-family: Niramit;
+  color: var(--primary-white);
+}
+
+@font-face {
+  font-family: Paytone_One;
+  src: url("../fonts/Paytone_One/PaytoneOne-Regular.ttf");
+}
+
+@font-face {
+  font-family: Niramit;
+  src: url("../fonts/Niramit/");
+}
