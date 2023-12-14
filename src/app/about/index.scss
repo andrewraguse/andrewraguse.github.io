@@ -1,17 +1,37 @@
 .about-page-content {
   text-align: center;
+  align-items: center;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
-  height: 300px;
-  width: 300px;
+  height: auto;
+  width: auto;
 }
 
-DefaultTextBox {
-  border-width: 2px;
-  border-style: solid;
-  border-color: black;
+.primary-content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile-photo {
+  width: 300px;
+  height: 50%;
+  border-radius: 50%;
+  margin: 20px;
+}
+
+#about-me-text {
+  margin: 20px;
+  text-align: justify;
+}
+
+#vertical-line {
+  height: "100%";
+  width: 10px;
+  background-color: aqua;
 }

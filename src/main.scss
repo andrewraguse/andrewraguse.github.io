@@ -1,15 +1,21 @@
 :root {
+  //font styles
   --font-size-lg: 60px;
   --font-size-md: 40px;
   --font-size-sm: 20px;
   --font-size-xsm: 16px;
 
+  //primary color scheme
   --primary-white: #f4faff;
   --primary-black: #16262e;
   --dark-background: #264067;
   --dark-background-secondary: #3e638d;
   --light-background: #fcb040;
   --light-background-secondary: #eb7931;
+
+  //component styles
+  --text-box-border-radius: 30px;
+  --text-box-border-size: 20px;
 }
 
 $primary: #264067;

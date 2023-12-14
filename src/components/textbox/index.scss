@@ -1,0 +1,15 @@
+.default-text-box {
+  border-width: var(--text-box-border-size);
+  border-radius: var(--text-box-border-radius);
+  border-style: solid;
+}
+
+.default-text-box-dark {
+  background-color: var(--dark-background);
+  border-color: var(--dark-background-secondary);
+}
+
+.default-text-box-light {
+  background-color: var(--light-background);
+  border-color: var(--light-background-secondary);
+}

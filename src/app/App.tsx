@@ -11,7 +11,7 @@ import FormControlLabel from "@mui/material/FormControlLabel";
 import ThemeSwitcher from "../components/theme-switcher";
 
 function App() {
-  //will update this to be based on the time of day
+  //Todo: will update this to be based on the time of day
   const [theme, setTheme] = useState("light");
 
   return (
@@ -30,7 +30,7 @@ function App() {
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/about" element={<AboutPage theme={theme} />} />
           <Route path="/resume" element={<ResumePage />} />
           <Route path="/photography" element={<PhotographyPage />} />
         </Routes>
@@ -49,19 +49,5 @@ function App() {
     </>
   );
 }
-
-/**
- *   const [showAlert, setShowAlert] = useState(false);
-  function renderAlert() {
-    console.log("Alert has been rendered");
-    setShowAlert(true);
-  }
-    <div>
-      <Button onClickButton={renderAlert}>Click Me!</Button>
-      {showAlert && (
-        <Alert onCancelButton={() => setShowAlert(false)}>Warning!!!</Alert>
-      )}
-    </div>
-    */
 
 export default App;
