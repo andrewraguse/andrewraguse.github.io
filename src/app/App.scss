@@ -37,7 +37,7 @@ body {
 
 //background themes for light and dark mode1;
 .stars {
-  background-size: cover;
+  background-size: contain;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -45,6 +45,10 @@ body {
   right: 0;
   display: block;
   z-index: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .stars-dark {
@@ -62,6 +66,10 @@ body {
   top: 70%;
   left: 80%;
   z-index: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .moon-sun-light {
@@ -79,13 +87,17 @@ body {
 .clouds1 {
   width: 10000px;
   height: 100%;
-  background-size: 1800px;
+  background-size: contain;
   overflow: hidden;
   position: absolute;
   top: 12%;
   right: 0;
   bottom: 0;
   z-index: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   animation: move-background 500s linear infinite;
 }
@@ -101,13 +113,17 @@ body {
 .clouds2 {
   width: 10000px;
   height: 100%;
-  background-size: 1800px;
+  background-size: contain;
   overflow: hidden;
   position: absolute;
   right: 0;
   top: 46%;
   bottom: 0;
   z-index: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   animation: move-background-10 700s linear infinite;
 }
@@ -123,13 +139,17 @@ body {
 .clouds3 {
   width: 10000px;
   height: 100%;
-  background-size: 1500px;
+  background-size: contain;
   overflow: hidden;
   position: absolute;
   top: 1%;
   right: 0;
   bottom: 0;
   z-index: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   animation: move-background 1000s linear infinite;
 }
@@ -145,13 +165,17 @@ body {
 .twinkle {
   width: 10000px;
   height: 100%;
-  background-size: 2000px;
+  background-size: contain;
   position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 0;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 
   animation: move-background-bounce 100s linear infinite;
 }

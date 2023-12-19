@@ -1,15 +1,21 @@
 .default-text-box {
-  border-width: var(--text-box-border-size);
+  border-width: var(--text-box-border-size-sm);
   border-radius: var(--text-box-border-radius);
+  border-color: var(--primary-white);
   border-style: solid;
+  overflow: hidden;
 }
 
 .default-text-box-dark {
   background-color: var(--dark-background);
-  border-color: var(--dark-background-secondary);
 }
 
 .default-text-box-light {
   background-color: var(--light-background);
-  border-color: var(--light-background-secondary);
+}
+
+@media only screen and (min-width: 48em) {
+  .default-text-box {
+    border-width: 10px;
+  }
 }

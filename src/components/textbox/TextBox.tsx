@@ -1,8 +1,10 @@
-import "./index.scss";
+import "./TextBox.scss";
+
 interface Props {
   children: React.ReactNode;
   theme: string;
 }
+
 function TextBox({ children, theme }: Props) {
   return (
     <div

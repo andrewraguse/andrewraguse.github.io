@@ -1,14 +1,14 @@
 import "./App.scss";
-import NavBar from "../components/navbar";
-import HomePage from "./home";
-import ResumePage from "./resume";
-import PhotographyPage from "./photography";
-import AboutPage from "./about";
+import NavBar from "../components/navbar/NavBar";
+import Home from "../pages/home/Home";
+import Resume from "../pages/resume/Resume";
+import Photography from "../pages/photography/Photography";
+import About from "../pages/about/About";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import ThemeSwitcher from "../components/theme-switcher";
+import ThemeSwitcher from "../components/theme-switcher/ThemeSwitcher";
 
 function App() {
   //Todo: will update this to be based on the time of day
@@ -26,15 +26,17 @@ function App() {
           <div className={`clouds3 clouds3-${theme}`} />
         </div>
       </div>
-      <BrowserRouter>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/about" element={<AboutPage theme={theme} />} />
-          <Route path="/resume" element={<ResumePage />} />
-          <Route path="/photography" element={<PhotographyPage />} />
-        </Routes>
-      </BrowserRouter>
+      <div className="foreground-components">
+        <BrowserRouter>
+          <NavBar />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About theme={theme} />} />
+            <Route path="/resume" element={<Resume />} />
+            <Route path="/photography" element={<Photography />} />
+          </Routes>
+        </BrowserRouter>
+      </div>
 
       <div className={`toggle-border-${theme}`} />
       <div className="light-dark-toggle">

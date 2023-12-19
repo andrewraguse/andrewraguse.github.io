@@ -1,5 +1,10 @@
 import { Link, useResolvedPath, useMatch } from "react-router-dom";
-import "./index.scss";
+import "./NavBar.scss";
+
+interface Props {
+  children: React.ReactNode;
+  theme: string;
+}
 
 function NavBar() {
   return (

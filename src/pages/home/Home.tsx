@@ -1,9 +1,9 @@
-import "./index.scss";
+import "./Home.scss";
 import { Link } from "react-router-dom";
 
 //<Link to="/about">about me &#8594;</Link>
 
-function HomePage() {
+function Home() {
   return (
     <div className="primary-text-box">
       <h1 className="animate__animated animate__bounce">HI, I'M DREW</h1>
@@ -18,7 +18,7 @@ function HomePage() {
           className="btn btn-outline-secondary rounded-5 animate__animated animate__slideInUp"
         >
           <div className="icon-button-text">
-            <span id="about-me-text">About Me</span>
+            <span id="about-me-button-text">About Me</span>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="16"
@@ -39,4 +39,4 @@ function HomePage() {
   );
 }
 
-export default HomePage;
+export default Home;

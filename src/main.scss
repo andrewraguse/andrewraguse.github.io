@@ -15,7 +15,8 @@
 
   //component styles
   --text-box-border-radius: 30px;
-  --text-box-border-size: 20px;
+  --text-box-border-size-lg: 20px;
+  --text-box-border-size-sm: 10px;
 }
 
 $primary: #264067;
@@ -41,7 +42,7 @@ $font-family-base:       $font-family-sans-serif !default;
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 h1 {
-  font-family: Paytone_One;
+  font-family: "Paytone One";
   font-size: var(--font-size-lg);
   color: var(--primary-white);
 }
@@ -58,12 +59,16 @@ a {
   color: var(--primary-white);
 }
 
-@font-face {
-  font-family: Paytone_One;
-  src: url("../fonts/Paytone_One/PaytoneOne-Regular.ttf");
-}
+@media only screen and (max-width: 34em) {
+  h1 {
+    font-size: var(--font-size-md);
+  }
 
-@font-face {
-  font-family: Niramit;
-  src: url("../fonts/Niramit/");
+  p {
+    font-size: var(--font-size-xsm);
+  }
+
+  a {
+    font-size: var(--font-size-xsm);
+  }
 }

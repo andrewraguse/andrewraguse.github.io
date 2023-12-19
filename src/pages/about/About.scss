@@ -1,0 +1,105 @@
+#text-border {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  height: 90vh;
+  width: 100vw;
+  overflow: scroll;
+  text-align: center;
+}
+
+#about-page-content {
+  width: 90vw;
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#primary-content {
+  flex-direction: column;
+  display: flex;
+}
+
+#profile-photo {
+  width: 150px;
+  height: 50%;
+  border-radius: 50%;
+  margin: 20px;
+  align-self: center;
+}
+
+#about-me-text {
+  margin: 20px;
+  text-align: left;
+  max-width: 50em;
+  //color: var(--dark-background);
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 34em) {
+  #about-page-content {
+    width: 80vw;
+  }
+
+  #profile-photo {
+    width: 150px;
+  }
+
+  #primary-content {
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+  #about-page-content {
+    width: 75vw;
+  }
+
+  #profile-photo {
+    width: 200px;
+  }
+
+  #primary-content {
+    flex-direction: column;
+    display: flex;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+  #about-page-content {
+    width: 75vw;
+  }
+
+  #profile-photo {
+    width: 250px;
+  }
+
+  #primary-content {
+    flex-direction: row;
+    display: flex;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+  #about-page-content {
+    width: 65vw;
+  }
+
+  #profile-photo {
+    width: 300px;
+  }
+
+  #primary-content {
+    flex-direction: row;
+    display: flex;
+  }
+}

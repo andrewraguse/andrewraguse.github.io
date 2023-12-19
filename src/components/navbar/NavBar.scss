@@ -1,0 +1,21 @@
+a.nav-link {
+  font-family: Niramit;
+  font-size: var(--font-size-sm);
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.navbar {
+  margin-top: 0px;
+  z-index: 1;
+}
+
+.navbar-collapse.collapsing {
+  background-color: #7e6551;
+  border-radius: 10px;
+}
+
+.navbar-collapse.collapse {
+  background-color: #7e6551;
+  border-radius: 10px;
+}
