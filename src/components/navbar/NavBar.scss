@@ -6,16 +6,29 @@ a.nav-link {
 }
 
 .navbar {
-  margin-top: 0px;
   z-index: 1;
+  margin-top: 10px;
 }
 
-.navbar-collapse.collapsing {
-  background-color: #7e6551;
-  border-radius: 10px;
-}
+/* change navbar background on collapse */
+@media (max-width: 575px) {
+  .navbar-collapse-dark.collapse {
+    background: var(--dark-background);
+    border-radius: 10px;
+  }
 
-.navbar-collapse.collapse {
-  background-color: #7e6551;
-  border-radius: 10px;
+  .navbar-collapse-light.collapse {
+    background: var(--light-background);
+    border-radius: 10px;
+  }
+
+  .navbar-collapse-dark.collapsing {
+    background-color: var(--dark-background);
+    border-radius: 10px;
+  }
+
+  .navbar-collapse-light.collapsing {
+    background-color: var(--light-background);
+    border-radius: 10px;
+  }
 }

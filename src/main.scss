@@ -2,7 +2,7 @@
   //font styles
   --font-size-lg: 60px;
   --font-size-md: 40px;
-  --font-size-sm: 20px;
+  --font-size-sm: 18px;
   --font-size-xsm: 16px;
 
   //primary color scheme
@@ -59,7 +59,7 @@ a {
   color: var(--primary-white);
 }
 
-@media only screen and (max-width: 34em) {
+@media only screen and (max-width: 36em) {
   h1 {
     font-size: var(--font-size-md);
   }

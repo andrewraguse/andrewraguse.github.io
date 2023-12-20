@@ -1,32 +1,22 @@
 import { Link, useResolvedPath, useMatch } from "react-router-dom";
 import "./NavBar.scss";
+import TogglerIcon from "../toggler-icon/TogglerIcon";
 
 interface Props {
-  children: React.ReactNode;
   theme: string;
 }
 
-function NavBar() {
+function NavBar({ theme }: Props) {
   return (
     <>
       <nav
-        className="navbar navbar-expand-md bg-transparent"
+        className={`navbar navbar-${theme} navbar-expand-sm bg-transparent`}
         data-bs-theme="dark"
       >
         <div className="container-fluid">
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNavAltMarkup"
-            aria-controls="navbarNavAltMarkup"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
+          <TogglerIcon />
           <div
-            className="collapse navbar-collapse justify-content-center"
+            className={`collapse navbar-collapse justify-content-center navbar-collapse-${theme}`}
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav">
