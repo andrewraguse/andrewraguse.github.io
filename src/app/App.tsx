@@ -1,18 +1,41 @@
 import "./App.scss";
 import NavBar from "../components/navbar/NavBar";
 import Home from "../pages/home/Home";
-import Resume from "../pages/resume/Resume";
-import Photography from "../pages/photography/Photography";
+import Contact from "../pages/contact/Contact";
+import Experience from "../pages/experience/Experience";
 import About from "../pages/about/About";
 import { Route, Routes, BrowserRouter } from "react-router-dom";
 import { useState } from "react";
 import FormGroup from "@mui/material/FormGroup";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import ThemeSwitcher from "../components/theme-switcher/ThemeSwitcher";
+import ThemeSwitcher from "../components/buttons/theme-switcher/ThemeSwitcher";
 
 function App() {
   //Todo: will update this to be based on the time of day
   const [theme, setTheme] = useState("light");
+
+  const pageNames = [
+    {
+      href: "/",
+      name: "home",
+      component: <Home />,
+    },
+    {
+      href: "/about",
+      name: "about",
+      component: <About theme={theme} />,
+    },
+    {
+      href: "/experience",
+      name: "experience",
+      component: <Experience theme={theme} />,
+    },
+    {
+      href: "/contact",
+      name: "contact",
+      component: <Contact />,
+    },
+  ];
 
   return (
     <>
@@ -28,12 +51,11 @@ function App() {
       </div>
       <div className="foreground-components">
         <BrowserRouter>
-          <NavBar theme={theme} />
+          <NavBar theme={theme} pageNames={pageNames} />
           <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About theme={theme} />} />
-            <Route path="/resume" element={<Resume />} />
-            <Route path="/photography" element={<Photography />} />
+            {pageNames.map((pageName) => (
+              <Route path={pageName.href} element={pageName.component} />
+            ))}
           </Routes>
         </BrowserRouter>
       </div>

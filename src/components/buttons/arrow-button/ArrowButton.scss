@@ -1,0 +1,21 @@
+#about-me-button-text {
+  text-align: center;
+  align-self: center;
+  font-family: Niramit;
+  font-size: var(--font-size-xsm);
+  overflow: hidden;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+.icon-button-text {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.bi-arrow-right {
+  text-align: center;
+  align-self: center;
+  overflow: hidden;
+}

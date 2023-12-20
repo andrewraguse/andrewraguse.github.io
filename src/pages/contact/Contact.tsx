@@ -1,6 +1,6 @@
-import "./Photography.scss";
+import "./Contact.scss";
 import TextBox from "../../components/textbox/TextBox";
-function Photography() {
+function Contact() {
   return (
     <>
       <div id="text-border">
@@ -41,4 +41,4 @@ function Photography() {
   );
 }
 
-export default Photography;
+export default Contact;

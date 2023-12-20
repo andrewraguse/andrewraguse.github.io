@@ -1,23 +1,12 @@
-#text-border {
-  bottom: 0px;
-  position: absolute;
-  height: 90vh;
-  width: 100vw;
-  overflow: scroll;
-  text-align: center;
-}
-
 #about-page-content {
-  width: 90vw;
-  margin-left: auto;
-  margin-right: auto;
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0px;
+  width: auto;
+  vertical-align: middle;
   display: flex;
   flex-direction: column;
-  height: auto;
-  margin: 0 auto;
-  padding: 10px;
-  position: relative;
-  vertical-align: middle;
 }
 
 #primary-content {
@@ -41,9 +30,9 @@
 }
 
 /* Small devices such as large phones (575px and up) */
-@media only screen and (min-width: 36em) {
+@media only screen and (min-width: var(--small-device)) {
   #about-page-content {
-    width: 80vw;
+    width: 80dvw;
   }
 
   #profile-photo {
@@ -57,9 +46,9 @@
 }
 
 /* Medium devices such as tablets (768px and up) */
-@media only screen and (min-width: 48em) {
+@media only screen and (min-width: var(--medium-device)) {
   #about-page-content {
-    width: 75vw;
+    width: 75dvw;
   }
 
   #profile-photo {
@@ -73,9 +62,9 @@
 }
 
 /* Large devices such as laptops (1024px and up) */
-@media only screen and (min-width: 64em) {
+@media only screen and (min-width: var(--large-device)) {
   #about-page-content {
-    width: 75vw;
+    width: 75dvw;
   }
 
   #profile-photo {
@@ -89,9 +78,9 @@
 }
 
 /* Largest devices such as desktops (1280px and up) */
-@media only screen and (min-width: 80em) {
+@media only screen and (min-width: var(--x-large-device)) {
   #about-page-content {
-    width: 65vw;
+    width: 65dvw;
   }
 
   #profile-photo {

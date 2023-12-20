@@ -17,6 +17,12 @@
   --text-box-border-radius: 30px;
   --text-box-border-size-lg: 20px;
   --text-box-border-size-sm: 10px;
+
+  //device screen sizes
+  --small-device: 36em;
+  --medium-device: 48em;
+  --large-device: 64em;
+  --x-large-device: 80em;
 }
 
 $primary: #264067;

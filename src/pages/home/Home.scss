@@ -1,67 +1,45 @@
-.primary-text-box {
+#primary-text-box {
   text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin-top: auto;
+  margin-bottom: auto;
   padding: 0px;
-  width: 300px;
+  padding-bottom: 30px;
+  width: 700px;
+  vertical-align: middle;
   display: flex;
   flex-direction: column;
 }
 
-#about-me-button-text {
-  text-align: center;
-  align-self: center;
-  font-family: Niramit;
-  font-size: var(--font-size-xsm);
-  overflow: hidden;
-  padding-bottom: 3px;
-  text-decoration: none;
-}
-
-.icon-button-text {
-  display: flex;
-  flex-direction: row;
-  gap: 5px;
-}
-
-.bi-arrow-right {
-  text-align: center;
-  align-self: center;
-  overflow: hidden;
-}
-
-.primary-text-box .btn:hover {
+#primary-text-box .btn:hover {
   .bi-arrow-right {
     transform: translateX(4px);
   }
 }
 
 /* Small devices such as large phones (640px and up) */
-@media only screen and (min-width: 34em) {
-  .primary-text-box {
+@media only screen and (min-width: var(--small-device)) {
+  #primary-text-box {
     width: 400px;
   }
 }
 
 /* Medium devices such as tablets (768px and up) */
-@media only screen and (min-width: 48em) {
-  .primary-text-box {
+@media only screen and (min-width: var(--medium-device)) {
+  #primary-text-box {
     width: 550px;
   }
 }
 
 /* Large devices such as laptops (1024px and up) */
-@media only screen and (min-width: 64em) {
-  .primary-text-box {
+@media only screen and (min-width: var(--large-device)) {
+  #primary-text-box {
     width: 650px;
   }
 }
 
 /* Largest devices such as desktops (1280px and up) */
-@media only screen and (min-width: 80em) {
-  .primary-text-box {
+@media only screen and (min-width: var(--x-large-device)) {
+  #primary-text-box {
     width: 700px;
   }
 }

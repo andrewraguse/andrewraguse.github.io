@@ -1,8 +1,8 @@
 .default-text-box {
-  border-width: var(--text-box-border-size-sm);
+  //border-width: var(--text-box-border-size-sm);
   border-radius: var(--text-box-border-radius);
-  border-color: var(--primary-white);
-  border-style: solid;
+  //border-color: var(--primary-white);
+  //border-style: solid;
   overflow: hidden;
 }
 
@@ -11,7 +11,8 @@
 }
 
 .default-text-box-light {
-  background-color: var(--light-background);
+  //fcb040
+  background-color: #ffb951;
 }
 
 @media only screen and (min-width: 48em) {

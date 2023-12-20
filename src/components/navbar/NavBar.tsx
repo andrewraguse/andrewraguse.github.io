@@ -1,12 +1,14 @@
 import { Link, useResolvedPath, useMatch } from "react-router-dom";
 import "./NavBar.scss";
-import TogglerIcon from "../toggler-icon/TogglerIcon";
+import TogglerIcon from "../buttons/toggler-icon/TogglerIcon";
+import NavigationPage from "../../models/NavigationPage";
 
 interface Props {
   theme: string;
+  pageNames: NavigationPage[];
 }
 
-function NavBar({ theme }: Props) {
+function NavBar({ theme, pageNames }: Props) {
   return (
     <>
       <nav
@@ -20,10 +22,11 @@ function NavBar({ theme }: Props) {
             id="navbarNavAltMarkup"
           >
             <div className="navbar-nav">
-              <NavButton to={"/"}>home</NavButton>
-              <NavButton to={"/about"}>about</NavButton>
-              <NavButton to={"/resume"}>resume</NavButton>
-              <NavButton to={"/photography"}>photography</NavButton>
+              {pageNames.map((pageName) => (
+                <NavButton key={pageName.name} to={pageName.href}>
+                  {pageName.name}
+                </NavButton>
+              ))}
             </div>
           </div>
         </div>
