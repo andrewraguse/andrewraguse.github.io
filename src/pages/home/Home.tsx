@@ -8,7 +8,7 @@ function Home() {
     <div className="primary-content-wrapper">
       <div id="primary-text-box">
         <h1 className="animate__animated animate__bounce">HI, I'M DREW</h1>
-        <p className="animate__animated animate__slideInLeft">
+        <p className="animate__animated animate__pulse">
           I am a fullstack software engineer seeking full-time employment in New
           York City. This is some more filler text until I find out what I want
           to say.

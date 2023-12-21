@@ -1,11 +1,11 @@
 import { Link, useResolvedPath, useMatch } from "react-router-dom";
 import "./NavBar.scss";
 import TogglerIcon from "../buttons/toggler-icon/TogglerIcon";
-import NavigationPage from "../../models/NavigationPage";
+import NavigationModel from "../../models/NavigationModel";
 
 interface Props {
   theme: string;
-  pageNames: NavigationPage[];
+  pageNames: NavigationModel[];
 }
 
 function NavBar({ theme, pageNames }: Props) {

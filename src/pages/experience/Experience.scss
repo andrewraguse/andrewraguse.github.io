@@ -1,0 +1,32 @@
+#experience-content-wrapper {
+  width: auto;
+  text-align: left;
+}
+
+#experience-page-content {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding: 0px;
+  padding-bottom: 80px;
+  width: 1000px;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+#experience-page-content-textbox-group {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+#work-experience-header {
+  margin: 20px;
+}
+
+.work-experience-item-wrapper {
+  margin: 20px;
+}

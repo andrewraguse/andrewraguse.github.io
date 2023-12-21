@@ -8,7 +8,7 @@ interface Props {
 function TextBox({ children, theme }: Props) {
   return (
     <div
-      className={`default-text-box default-text-box-${theme} animate__animated animate__slideInLeft`}
+      className={`default-text-box default-text-box-${theme} animate__animated animate__pulse`}
     >
       {children}
     </div>

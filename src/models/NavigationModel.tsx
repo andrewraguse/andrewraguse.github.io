@@ -1,7 +1,7 @@
-interface NavigationPage {
+interface NavigationModel {
   href: string;
   name: string;
   component: JSX.Element;
 }
 
-export default NavigationPage;
+export default NavigationModel;

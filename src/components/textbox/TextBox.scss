@@ -1,22 +1,24 @@
 .default-text-box {
-  //border-width: var(--text-box-border-size-sm);
-  border-radius: var(--text-box-border-radius);
-  //border-color: var(--primary-white);
-  //border-style: solid;
+  border-width: var(--text-box-border-size-lg);
+  border-radius: 50px;
+  border-style: dashed;
   overflow: hidden;
+  border-color: var(--primary-white);
 }
 
 .default-text-box-dark {
-  background-color: var(--dark-background);
+  //border-color: white;
+  background-color: var(--dark-background-secondary);
 }
 
 .default-text-box-light {
   //fcb040
-  background-color: #ffb951;
+  //border-color: var(--light-background);
+  background-color: var(--light-background-secondary);
 }
 
-@media only screen and (min-width: 48em) {
+@media only screen and (max-width: 48em) {
   .default-text-box {
-    border-width: 10px;
+    border-width: var(--text-box-border-size-sm);
   }
 }

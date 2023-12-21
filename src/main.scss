@@ -14,15 +14,9 @@
   --light-background-secondary: #eb7931;
 
   //component styles
-  --text-box-border-radius: 30px;
-  --text-box-border-size-lg: 20px;
-  --text-box-border-size-sm: 10px;
-
-  //device screen sizes
-  --small-device: 36em;
-  --medium-device: 48em;
-  --large-device: 64em;
-  --x-large-device: 80em;
+  --text-box-border-radius: 10px;
+  --text-box-border-size-lg: 10px;
+  --text-box-border-size-sm: 5px;
 }
 
 $primary: #264067;
@@ -53,8 +47,35 @@ h1 {
   color: var(--primary-white);
 }
 
+h2 {
+  font-family: "Paytone One";
+  font-size: var(--font-size-md);
+  color: var(--primary-white);
+}
+
+h3 {
+  font-family: Niramit;
+  font-weight: bold;
+  font-size: var(--font-size-md);
+  color: var(--primary-white);
+}
+
+h4 {
+  font-family: Niramit;
+  font-weight: bold;
+  font-style: italic;
+  font-size: var(--font-size-sm);
+  color: var(--primary-white);
+}
+
 p {
   font-size: var(--font-size-sm);
+  font-family: Niramit;
+  color: var(--primary-white);
+}
+
+li {
+  font-size: var(--font-size-xsm);
   font-family: Niramit;
   color: var(--primary-white);
 }

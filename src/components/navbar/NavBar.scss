@@ -11,7 +11,7 @@ a.nav-link {
 }
 
 /* change navbar background on collapse */
-@media (max-width: 575px) {
+@media (max-width: 36em) {
   .navbar-collapse-dark.collapse {
     background: var(--dark-background);
     border-radius: 10px;

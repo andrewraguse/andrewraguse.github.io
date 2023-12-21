@@ -3,20 +3,24 @@
   margin-top: auto;
   margin-bottom: auto;
   padding: 0px;
+  padding-bottom: 80px;
   width: auto;
   vertical-align: middle;
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
-#primary-content {
-  flex-direction: column;
+#about-me-details-wrapper {
+  min-width: 250px;
   display: flex;
+  flex-direction: column;
 }
 
 #profile-photo {
-  width: 150px;
-  height: 50%;
+  width: 200px;
+  height: auto;
   border-radius: 50%;
   margin: 20px;
   align-self: center;
@@ -25,12 +29,38 @@
 #about-me-text {
   margin: 20px;
   text-align: left;
-  max-width: 50em;
-  //color: var(--dark-background);
+  max-width: 30em;
+}
+
+#social-media-icons {
+  display: flex;
+  flex-direction: row;
+}
+
+#photo-and-icon-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media-icon {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  fill: var(--primary-white);
+}
+
+#social-media-icons .social-media-icon-light:hover {
+  fill: var(--light-background);
+}
+
+#social-media-icons .social-media-icon-dark:hover {
+  fill: var(--dark-background);
 }
 
 /* Small devices such as large phones (575px and up) */
-@media only screen and (min-width: var(--small-device)) {
+@media only screen and (min-width: 36em) {
   #about-page-content {
     width: 80dvw;
   }
@@ -39,14 +69,14 @@
     width: 150px;
   }
 
-  #primary-content {
+  #about-me-details-wrapper {
     flex-direction: column;
     display: flex;
   }
 }
 
 /* Medium devices such as tablets (768px and up) */
-@media only screen and (min-width: var(--medium-device)) {
+@media only screen and (min-width: 48em) {
   #about-page-content {
     width: 75dvw;
   }
@@ -55,16 +85,16 @@
     width: 200px;
   }
 
-  #primary-content {
-    flex-direction: column;
+  #about-me-details-wrapper {
+    flex-direction: row;
     display: flex;
   }
 }
 
 /* Large devices such as laptops (1024px and up) */
-@media only screen and (min-width: var(--large-device)) {
+@media only screen and (min-width: 64em) {
   #about-page-content {
-    width: 75dvw;
+    width: 70dvw;
   }
 
   #profile-photo {
@@ -78,7 +108,7 @@
 }
 
 /* Largest devices such as desktops (1280px and up) */
-@media only screen and (min-width: var(--x-large-device)) {
+@media only screen and (min-width: 80em) {
   #about-page-content {
     width: 65dvw;
   }
@@ -87,8 +117,8 @@
     width: 300px;
   }
 
-  #primary-content {
-    flex-direction: row;
+  #about-me-details-wrapper {
     display: flex;
+    flex-direction: row;
   }
 }

@@ -12,7 +12,7 @@ import ThemeSwitcher from "../components/buttons/theme-switcher/ThemeSwitcher";
 
 function App() {
   //Todo: will update this to be based on the time of day
-  const [theme, setTheme] = useState("light");
+  const [theme, setTheme] = useState("dark");
 
   const pageNames = [
     {
@@ -64,7 +64,7 @@ function App() {
       <div className="light-dark-toggle">
         <FormGroup>
           <FormControlLabel
-            control={<ThemeSwitcher sx={{ m: 20 }} />}
+            control={<ThemeSwitcher sx={{ m: 20 }} defaultChecked />}
             onChange={() => setTheme(theme === "light" ? "dark" : "light")}
             label=""
           />
