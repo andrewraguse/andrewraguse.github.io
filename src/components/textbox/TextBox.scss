@@ -1,19 +1,19 @@
 .default-text-box {
   border-width: var(--text-box-border-size-lg);
-  border-radius: 50px;
+  border-radius: 20px;
   border-style: dashed;
   overflow: hidden;
   border-color: var(--primary-white);
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
 .default-text-box-dark {
-  //border-color: white;
   background-color: var(--dark-background-secondary);
 }
 
 .default-text-box-light {
-  //fcb040
-  //border-color: var(--light-background);
   background-color: var(--light-background-secondary);
 }
 

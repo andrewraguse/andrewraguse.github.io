@@ -1,5 +1,5 @@
-import "./ArrowButton.scss";
-import { Link } from "react-router-dom";
+import './ArrowButton.scss';
+import { Link } from 'react-router-dom';
 
 interface Props {
   link: string;

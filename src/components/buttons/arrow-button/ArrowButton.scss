@@ -19,3 +19,9 @@
   align-self: center;
   overflow: hidden;
 }
+
+.btn:hover {
+  .bi-arrow-right {
+    transform: translateX(4px);
+  }
+}

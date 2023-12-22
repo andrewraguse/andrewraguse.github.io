@@ -1,6 +1,5 @@
 #experience-content-wrapper {
-  width: auto;
-  text-align: left;
+  align-items: auto;
 }
 
 #experience-page-content {
@@ -9,8 +8,8 @@
   margin-bottom: auto;
   padding: 0px;
   padding-bottom: 80px;
+  padding-top: 40px;
   width: 1000px;
-  vertical-align: middle;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
@@ -19,14 +18,106 @@
 
 #experience-page-content-textbox-group {
   display: flex;
-  flex-direction: row;
-  gap: 10px;
+  flex-direction: column;
+  align-items: center;
 }
 
-#work-experience-header {
+.experience-content-wrapper {
+  margin: 20px;
+  text-align: left;
+}
+
+.experience-section-wrapper {
+  text-align: left;
+  height: fit-content;
   margin: 20px;
 }
 
-.work-experience-item-wrapper {
-  margin: 20px;
+.experience-column1 .experience-section-header {
+  font-family: 'Paytone One';
+  font-size: var(--font-size-sm-md);
+  width: 200px;
+  text-align: left;
+}
+
+.experience-column1 {
+  max-width: 400px;
+}
+
+.experience-column2 {
+  max-width: 400px;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 36em) {
+  .experience-column1 {
+    max-width: 700px;
+  }
+
+  .experience-column2 {
+    max-width: 700px;
+  }
+
+  #experience-page-content-textbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #experience-page-content-textbox-group {
+    align-items: center;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+  .experience-column1 {
+    max-width: 800px;
+  }
+
+  .experience-column2 {
+    max-width: 800px;
+  }
+
+  #experience-page-content-textbox-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #experience-page-content-textbox-group {
+    align-items: center;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+  .experience-column1 {
+    max-width: 400px;
+  }
+
+  .experience-column2 {
+    max-width: 900px;
+  }
+
+  #experience-page-content-textbox-group {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+  .experience-column1 {
+    max-width: 400px;
+  }
+
+  .experience-column2 {
+    max-width: 900px;
+  }
+
+  #experience-page-content-textbox-group {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+  }
 }

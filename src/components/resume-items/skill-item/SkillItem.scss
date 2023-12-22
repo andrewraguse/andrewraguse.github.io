@@ -1,0 +1,24 @@
+.skill-experience-resume-item {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.proficiency-ranking-container {
+  width: 120px;
+  height: 15px;
+  border: var(--primary-white) solid 1px;
+  display: flex;
+  flex-direction: row;
+}
+
+.proficiency-ranking-item {
+  width: 24px;
+  height: 14px;
+}
+
+.proficiency-ranking-item-full {
+  width: 24px;
+  height: 14px;
+  background-color: var(--primary-white);
+}

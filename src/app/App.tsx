@@ -1,39 +1,39 @@
-import "./App.scss";
-import NavBar from "../components/navbar/NavBar";
-import Home from "../pages/home/Home";
-import Contact from "../pages/contact/Contact";
-import Experience from "../pages/experience/Experience";
-import About from "../pages/about/About";
-import { Route, Routes, BrowserRouter } from "react-router-dom";
-import { useState } from "react";
-import FormGroup from "@mui/material/FormGroup";
-import FormControlLabel from "@mui/material/FormControlLabel";
-import ThemeSwitcher from "../components/buttons/theme-switcher/ThemeSwitcher";
+import './App.scss';
+import NavBar from '../components/navbar/NavBar';
+import Home from '../pages/home/Home';
+import Contact from '../pages/contact/Contact';
+import Experience from '../pages/experience/Experience';
+import About from '../pages/about/About';
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
+import { useState } from 'react';
+import FormGroup from '@mui/material/FormGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import ThemeSwitcher from '../components/buttons/theme-switcher/ThemeSwitcher';
 
 function App() {
   //Todo: will update this to be based on the time of day
-  const [theme, setTheme] = useState("dark");
+  const [theme, setTheme] = useState('dark');
 
   const pageNames = [
     {
-      href: "/",
-      name: "home",
+      href: '/',
+      name: 'home',
       component: <Home />,
     },
     {
-      href: "/about",
-      name: "about",
+      href: '/about',
+      name: 'about',
       component: <About theme={theme} />,
     },
     {
-      href: "/experience",
-      name: "experience",
+      href: '/experience',
+      name: 'experience',
       component: <Experience theme={theme} />,
     },
     {
-      href: "/contact",
-      name: "contact",
-      component: <Contact />,
+      href: '/contact',
+      name: 'contact',
+      component: <Contact theme={theme} />,
     },
   ];
 
@@ -54,7 +54,11 @@ function App() {
           <NavBar theme={theme} pageNames={pageNames} />
           <Routes>
             {pageNames.map((pageName) => (
-              <Route path={pageName.href} element={pageName.component} />
+              <Route
+                key={pageName.component}
+                path={pageName.href}
+                element={pageName.component}
+              />
             ))}
           </Routes>
         </BrowserRouter>
@@ -65,7 +69,7 @@ function App() {
         <FormGroup>
           <FormControlLabel
             control={<ThemeSwitcher sx={{ m: 20 }} defaultChecked />}
-            onChange={() => setTheme(theme === "light" ? "dark" : "light")}
+            onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
             label=""
           />
         </FormGroup>

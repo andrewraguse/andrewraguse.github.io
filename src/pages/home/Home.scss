@@ -3,17 +3,11 @@
   margin-top: auto;
   margin-bottom: auto;
   padding: 0px;
-  padding-bottom: 30px;
+  padding-bottom: 60px;
   width: 300px;
   vertical-align: middle;
   display: flex;
   flex-direction: column;
-}
-
-#primary-text-box .btn:hover {
-  .bi-arrow-right {
-    transform: translateX(4px);
-  }
 }
 
 /* Small devices such as large phones (640px and up) */

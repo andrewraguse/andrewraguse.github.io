@@ -1,0 +1,54 @@
+#contact-page-content {
+  margin: 30px;
+  width: 280px;
+}
+
+#contact-page-name-email {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-page-content-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 50px;
+}
+
+textarea.form-control {
+  font-size: var(--font-size-sm);
+  font-family: Niramit;
+  background-color: var(--primary-white);
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (min-width: 36em) {
+  #contact-page-content {
+    margin: 30px;
+    width: 500px;
+  }
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+  #contact-page-content {
+    margin: 30px;
+    width: 600px;
+  }
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+  #contact-page-content {
+    margin: 30px;
+    width: 700px;
+  }
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+  #contact-page-content {
+    margin: 30px;
+    width: 800px;
+  }
+}

@@ -2,6 +2,7 @@
   //font styles
   --font-size-lg: 60px;
   --font-size-md: 40px;
+  --font-size-sm-md: 25px;
   --font-size-sm: 18px;
   --font-size-xsm: 16px;
 
@@ -39,31 +40,30 @@ $font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier Ne
 $font-family-base:       $font-family-sans-serif !default;
 */
 
-@import "../node_modules/bootstrap/scss/bootstrap";
+@import '../node_modules/bootstrap/scss/bootstrap';
 
 h1 {
-  font-family: "Paytone One";
+  font-family: 'Paytone One';
   font-size: var(--font-size-lg);
   color: var(--primary-white);
 }
 
 h2 {
-  font-family: "Paytone One";
+  font-family: 'Paytone One';
   font-size: var(--font-size-md);
   color: var(--primary-white);
 }
 
 h3 {
   font-family: Niramit;
-  font-weight: bold;
+  font-weight: 600;
   font-size: var(--font-size-md);
   color: var(--primary-white);
 }
 
 h4 {
   font-family: Niramit;
-  font-weight: bold;
-  font-style: italic;
+  font-weight: 500;
   font-size: var(--font-size-sm);
   color: var(--primary-white);
 }
@@ -84,6 +84,24 @@ a {
   font-size: var(--font-size-sm);
   font-family: Niramit;
   color: var(--primary-white);
+}
+
+label {
+  font-size: var(--font-size-sm);
+  font-family: Niramit;
+  color: var(--primary-white);
+}
+
+input[type='text'] {
+  font-size: var(--font-size-sm);
+  font-family: Niramit;
+  background-color: var(--primary-white);
+}
+
+input[type='email'] {
+  font-size: var(--font-size-sm);
+  font-family: Niramit;
+  background-color: var(--primary-white);
 }
 
 @media only screen and (max-width: 36em) {

@@ -1,41 +1,53 @@
-import "./Contact.scss";
-import TextBox from "../../components/textbox/TextBox";
-function Contact() {
+import './Contact.scss';
+import TextBox from '../../components/textbox/TextBox';
+import ArrowButton from '../../components/buttons/arrow-button/ArrowButton';
+
+interface Props {
+  theme: string;
+}
+function Contact({ theme }: Props) {
   return (
     <>
-      <div id="text-border">
-        <div id="about-page-content">
-          <h1 id="about">About</h1>
-          <TextBox theme={"dark"}>
-            <div id="primary-content">
-              <img
-                id="profile-photo"
-                src="./IMG_3334.jpeg"
-                alt="self profile photo"
-              />
-              <div id="vertical-line" />
-              <p id="about-me-text">
-                Hello my name is Andrew Raguse and I am from southern
-                california. Some more text about me is that I blah blah blah
-                blah. I really want to fill in this space so I can format this
-                document well.
-                <br />
-                <br />
-                Hello my name is Andrew Raguse and I am from southern
-                california. Some more text about me is that I blah blah blah
-                blah. I really want to fill in this space so I can format this
-                document well.
-                <br />
-                <br />
-                Hello my name is Andrew Raguse and I am from southern
-                california. Some more text about me is that I blah blah blah
-                blah. I really want to fill in this space so I can format this
-                document well.
-                <br />
-              </p>
+      <div className="primary-content-wrapper contact-page-content-wrapper">
+        <h1 className="animate__animated animate__bounce">CONTACT</h1>
+        <TextBox theme={theme}>
+          <div id="contact-page-content">
+            <p>Have any questions, send me a message!</p>
+            <div id="contact-page-name-email">
+              <div className="mb-3 animate__animated animate__pulse">
+                <label form="form-control-input-label-1" className="form-label">
+                  Name:
+                </label>
+                <input
+                  type="text"
+                  className="form-control form-control-input-1"
+                  placeholder="John Smith"
+                />
+              </div>
+              <div className="mb-3 animate__animated animate__pulse">
+                <label form="form-control-input-label-2" className="form-label">
+                  Email Address:
+                </label>
+                <input
+                  type="email"
+                  className="form-control form-control-input-2"
+                  placeholder="name@example.com"
+                />
+              </div>
             </div>
-          </TextBox>
-        </div>
+            <div className="mb-3 animate__animated animate__pulse">
+              <label form="form-control-input-label-3" className="form-label">
+                Message:
+              </label>
+              <textarea
+                className="form-control form-control-input-3"
+                placeholder="Write your message here..."
+                rows={4}
+              />
+            </div>
+            <ArrowButton link="/about">Send</ArrowButton>
+          </div>
+        </TextBox>
       </div>
     </>
   );
