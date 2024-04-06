@@ -66,7 +66,7 @@ function Experience({ theme }: Props) {
                 <div className="experience-section-wrapper skill-experience-section-wrapper">
                   <h3 className="experience-section-header">Skills</h3>
                   {skillExperienceContent.map((skillExperience) => (
-                    <SkillItem skillModel={skillExperience} />
+                    <SkillItem skillModel={skillExperience} theme={theme} />
                   ))}
                 </div>
               </TextBox>

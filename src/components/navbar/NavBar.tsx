@@ -1,7 +1,7 @@
-import { Link, useResolvedPath, useMatch } from "react-router-dom";
-import "./NavBar.scss";
-import TogglerIcon from "../buttons/toggler-icon/TogglerIcon";
-import NavigationModel from "../../models/NavigationModel";
+import { Link, useResolvedPath, useMatch } from 'react-router-dom';
+import './NavBar.scss';
+import TogglerIcon from '../buttons/toggler-icon/TogglerIcon';
+import NavigationModel from '../../models/NavigationModel';
 
 interface Props {
   theme: string;
@@ -11,17 +11,14 @@ interface Props {
 function NavBar({ theme, pageNames }: Props) {
   return (
     <>
-      <nav
-        className={`navbar navbar-${theme} navbar-expand-sm bg-transparent`}
-        data-bs-theme="dark"
-      >
+      <nav className={`navbar ${theme} navbar-expand-sm bg-transparent`}>
         <div className="container-fluid">
-          <TogglerIcon />
+          <TogglerIcon theme={theme} />
           <div
-            className={`collapse navbar-collapse justify-content-center navbar-collapse-${theme}`}
+            className={`collapse navbar-collapse justify-content-center ${theme}`}
             id="navbarNavAltMarkup"
           >
-            <div className="navbar-nav">
+            <div className={`navbar-nav navbar-nav-${theme}`}>
               {pageNames.map((pageName) => (
                 <NavButton key={pageName.name} to={pageName.href}>
                   {pageName.name}
@@ -46,7 +43,7 @@ function NavButton({ to, children }: NavButtonProps) {
   return (
     <Link
       to={to}
-      className={isActive ? "nav-link active" : "nav-link"}
+      className={isActive ? 'nav-link active' : 'nav-link'}
       aria-current="page"
     >
       {children}

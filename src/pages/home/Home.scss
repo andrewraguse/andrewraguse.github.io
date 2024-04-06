@@ -1,39 +1,43 @@
-#primary-text-box {
+#home-page-content-wrapper {
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
   padding: 0px;
   padding-bottom: 60px;
-  width: 300px;
   vertical-align: middle;
   display: flex;
   flex-direction: column;
+  padding-bottom: 50px;
+}
+
+#home-page-content {
+  width: 300px;
 }
 
 /* Small devices such as large phones (640px and up) */
 @media only screen and (min-width: 36em) {
-  #primary-text-box {
+  #home-page-content {
     width: 400px;
   }
 }
 
 /* Medium devices such as tablets (768px and up) */
 @media only screen and (min-width: 48em) {
-  #primary-text-box {
+  #home-page-content {
     width: 550px;
   }
 }
 
 /* Large devices such as laptops (1024px and up) */
 @media only screen and (min-width: 64em) {
-  #primary-text-box {
+  #home-page-content {
     width: 650px;
   }
 }
 
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (min-width: 80em) {
-  #primary-text-box {
+  #home-page-content {
     width: 700px;
   }
 }

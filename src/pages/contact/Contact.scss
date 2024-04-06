@@ -9,6 +9,11 @@
   gap: 20px;
 }
 
+#contact-header-text {
+  text-align: center;
+  margin-top: 40px;
+}
+
 .contact-page-content-wrapper {
   display: flex;
   flex-direction: column;
@@ -21,9 +26,26 @@ textarea.form-control {
   background-color: var(--primary-white);
 }
 
+#contact-form-title-text {
+  text-align: center;
+}
+
+#contact-form-wrapper {
+  margin: 20px;
+}
+
+#modal-alert {
+  
+}
+
+input.input-form,
+textarea.input-form {
+  margin-bottom: 20px;
+}
+
 /* Small devices such as large phones (640px and up) */
 @media only screen and (min-width: 36em) {
-  #contact-page-content {
+  #contact-form-wrapper {
     margin: 30px;
     width: 500px;
   }
@@ -31,7 +53,7 @@ textarea.form-control {
 
 /* Medium devices such as tablets (768px and up) */
 @media only screen and (min-width: 48em) {
-  #contact-page-content {
+  #contact-form-wrapper {
     margin: 30px;
     width: 600px;
   }
@@ -39,7 +61,7 @@ textarea.form-control {
 
 /* Large devices such as laptops (1024px and up) */
 @media only screen and (min-width: 64em) {
-  #contact-page-content {
+  #contact-form-wrapper {
     margin: 30px;
     width: 700px;
   }
@@ -47,7 +69,7 @@ textarea.form-control {
 
 /* Largest devices such as desktops (1280px and up) */
 @media only screen and (min-width: 80em) {
-  #contact-page-content {
+  #contact-form-wrapper {
     margin: 30px;
     width: 800px;
   }

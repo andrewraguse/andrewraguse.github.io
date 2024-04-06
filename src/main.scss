@@ -1,4 +1,6 @@
 :root {
+  color-scheme: light dark;
+
   //font styles
   --font-size-lg: 60px;
   --font-size-md: 40px;
@@ -8,11 +10,12 @@
 
   //primary color scheme
   --primary-white: #f4faff;
-  --primary-black: #16262e;
-  --dark-background: #264067;
-  --dark-background-secondary: #3e638d;
-  --light-background: #fcb040;
-  --light-background-secondary: #eb7931;
+  --primary-black: #111b2c;
+  --dark-background: #111b2c;
+  --dark-background-secondary: #233658;
+  --light-background: #cce9ff;
+  --light-background-secondary: #f4faff;
+  --dark-border-color: #3e638d;
 
   //component styles
   --text-box-border-radius: 10px;
@@ -20,88 +23,140 @@
   --text-box-border-size-sm: 5px;
 }
 
-$primary: #264067;
+$primary: #111b2c;
 $secondary: #f4faff;
-$light: #eb7931;
-$dark: #3e638d;
-
-/*"primary":    shift-color($primary, $table-bg-scale),
-"secondary":  shift-color($secondary, $table-bg-scale),
-"success":    shift-color($success, $table-bg-scale),
-"info":       shift-color($info, $table-bg-scale),
-"warning":    shift-color($warning, $table-bg-scale),
-"danger":     shift-color($danger, $table-bg-scale),
-"light":      $light,
-"dark":       $dark,
-
-$font-family-sans-serif: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif !default;
-$font-family-serif:      lostar, Georgia, "Times New Roman", Times, serif !default;
-$font-family-monospace:  Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
-$font-family-base:       $font-family-sans-serif !default;
-*/
+$light: #cce9ff;
+$dark: #233658;
 
 @import '../node_modules/bootstrap/scss/bootstrap';
 
-h1 {
-  font-family: 'Paytone One';
-  font-size: var(--font-size-lg);
-  color: var(--primary-white);
-}
+body {
+  .light {
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a,
+    li,
+    label,
+    input,
+    button {
+      color: var(--primary-black);
+    }
 
-h2 {
-  font-family: 'Paytone One';
-  font-size: var(--font-size-md);
-  color: var(--primary-white);
-}
+    input[type='text'],
+    input[type='email'],
+    textarea {
+      border-color: var(--light-background);
+    }
 
-h3 {
-  font-family: Niramit;
-  font-weight: 600;
-  font-size: var(--font-size-md);
-  color: var(--primary-white);
-}
+    input[type='text']:focus,
+    input[type='email']:focus,
+    textarea:focus {
+      outline: var(--light-background) solid 2px;
+      outline-offset: -3px;
+    }
+  }
 
-h4 {
-  font-family: Niramit;
-  font-weight: 500;
-  font-size: var(--font-size-sm);
-  color: var(--primary-white);
-}
+  .dark {
+    h1,
+    h2,
+    h3,
+    h4,
+    p,
+    a,
+    li,
+    label,
+    input,
+    button {
+      color: var(--primary-white);
+    }
 
-p {
-  font-size: var(--font-size-sm);
-  font-family: Niramit;
-  color: var(--primary-white);
-}
+    input[type='text'],
+    input[type='email'],
+    textarea {
+      border-color: transparent;
+    }
 
-li {
-  font-size: var(--font-size-xsm);
-  font-family: Niramit;
-  color: var(--primary-white);
-}
+    input[type='text']:focus,
+    input[type='email']:focus,
+    textarea:focus {
+      outline: var(--dark-background-secondary) solid 2px;
+      outline-offset: -3px;
+    }
+  }
 
-a {
-  font-size: var(--font-size-sm);
-  font-family: Niramit;
-  color: var(--primary-white);
-}
+  h1 {
+    font-family: 'Paytone One';
+    font-size: var(--font-size-lg);
+  }
 
-label {
-  font-size: var(--font-size-sm);
-  font-family: Niramit;
-  color: var(--primary-white);
-}
+  h2 {
+    font-family: 'Paytone One';
+    font-size: var(--font-size-md);
+  }
 
-input[type='text'] {
-  font-size: var(--font-size-sm);
-  font-family: Niramit;
-  background-color: var(--primary-white);
-}
+  h3 {
+    font-family: Niramit;
+    font-weight: 600;
+    font-size: var(--font-size-md);
+  }
 
-input[type='email'] {
-  font-size: var(--font-size-sm);
-  font-family: Niramit;
-  background-color: var(--primary-white);
+  h4 {
+    font-family: Niramit;
+    font-weight: 500;
+    font-size: var(--font-size-sm);
+  }
+
+  p {
+    font-size: var(--font-size-sm);
+    font-family: Niramit;
+  }
+
+  li {
+    font-size: var(--font-size-xsm);
+    font-family: Niramit;
+  }
+
+  a {
+    font-size: var(--font-size-sm);
+    font-family: Niramit;
+  }
+
+  label {
+    font-size: var(--font-size-sm);
+    font-family: Niramit;
+  }
+
+  .standard-text-light {
+    font-family: Niramit;
+    color: var(--primary-white);
+    font-size: var(--font-size-sm);
+  }
+
+  .standard-text-dark {
+    font-family: Niramit;
+    color: var(--primary-black);
+    font-size: var(--font-size-sm);
+  }
+
+  input[type='text'],
+  input[type='email'],
+  textarea {
+    font-size: var(--font-size-sm);
+    font-family: Niramit;
+    background-color: var(--primary-white);
+    border-radius: 5px;
+    border-color: transparent;
+    caret-color: var(--primary-black);
+    border: solid;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 @media only screen and (max-width: 36em) {

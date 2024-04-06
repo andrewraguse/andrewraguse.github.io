@@ -15,12 +15,23 @@ button.navbar-toggler-icon:focus {
   border: 0;
 }
 
+.dark {
+  .toggler-icon {
+    background: var(--primary-white);
+  }
+}
+
+.light {
+  .toggler-icon {
+    background: var(--primary-black);
+  }
+}
+
 .toggler-icon {
   display: block;
   height: 3px;
   width: 100%;
   position: absolute;
-  background: var(--primary-white);
   border-radius: 10px;
   opacity: 1;
   left: 0;

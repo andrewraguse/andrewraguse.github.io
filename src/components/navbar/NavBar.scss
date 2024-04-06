@@ -3,6 +3,7 @@ a.nav-link {
   font-size: var(--font-size-sm);
   margin-left: 10px;
   margin-right: 10px;
+  font-weight: 300;
 }
 
 .navbar {
@@ -10,24 +11,36 @@ a.nav-link {
   margin-top: 10px;
 }
 
+.navbar-nav a.nav-link.active {
+  font-weight: bold;
+}
+
+.navbar-nav-light a.nav-link.active {
+  color: var(--primary-black);
+}
+
+.navbar-nav-dark a.nav-link.active {
+  color: var(--primary-white);
+}
+
 /* change navbar background on collapse */
 @media (max-width: 36em) {
-  .navbar-collapse-dark.collapse {
+  .navbar-collapse.dark.collapse {
     background: var(--dark-background);
     border-radius: 10px;
   }
 
-  .navbar-collapse-light.collapse {
+  .navbar-collapse.light.collapse {
     background: var(--light-background);
     border-radius: 10px;
   }
 
-  .navbar-collapse-dark.collapsing {
+  .navbar-collapse.dark.collapsing {
     background-color: var(--dark-background);
     border-radius: 10px;
   }
 
-  .navbar-collapse-light.collapsing {
+  .navbar-collapse.light.collapsing {
     background-color: var(--light-background);
     border-radius: 10px;
   }

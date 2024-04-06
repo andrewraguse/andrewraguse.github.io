@@ -1,20 +1,22 @@
 .default-text-box {
-  border-width: var(--text-box-border-size-lg);
+  border-width: 8px;
   border-radius: 20px;
   border-style: dashed;
   overflow: hidden;
-  border-color: var(--primary-white);
   margin-top: 20px;
   margin-left: 10px;
   margin-right: 10px;
+  height: auto;
 }
 
-.default-text-box-dark {
+.default-text-box.dark {
   background-color: var(--dark-background-secondary);
+  border-color: var(--primary-white);
 }
 
-.default-text-box-light {
+.default-text-box.light {
   background-color: var(--light-background-secondary);
+  border-color: var(--dark-border-color);
 }
 
 @media only screen and (max-width: 48em) {

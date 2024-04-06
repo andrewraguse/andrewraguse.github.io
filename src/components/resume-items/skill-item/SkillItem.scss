@@ -12,6 +12,14 @@
   flex-direction: row;
 }
 
+.proficiency-ranking-container.dark {
+  border: var(--primary-white) solid 1px;
+}
+
+.proficiency-ranking-container.light {
+  border: var(--primary-black) solid 1px;
+}
+
 .proficiency-ranking-item {
   width: 24px;
   height: 14px;
@@ -20,5 +28,12 @@
 .proficiency-ranking-item-full {
   width: 24px;
   height: 14px;
+}
+
+.proficiency-ranking-item-full.dark {
   background-color: var(--primary-white);
+}
+
+.proficiency-ranking-item-full.light {
+  background-color: var(--primary-black);
 }

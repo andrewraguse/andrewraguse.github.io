@@ -11,8 +11,11 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import ThemeSwitcher from '../components/buttons/theme-switcher/ThemeSwitcher';
 
 function App() {
-  //Todo: will update this to be based on the time of day
-  const [theme, setTheme] = useState('dark');
+  const useDark =
+    window.matchMedia &&
+    window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+  const [theme, setTheme] = useDark ? useState('dark') : useState('light');
 
   const pageNames = [
     {
@@ -49,13 +52,13 @@ function App() {
           <div className={`clouds3 clouds3-${theme}`} />
         </div>
       </div>
-      <div className="foreground-components">
+      <div className={`foreground-components  ${theme}`}>
         <BrowserRouter>
           <NavBar theme={theme} pageNames={pageNames} />
           <Routes>
             {pageNames.map((pageName) => (
               <Route
-                key={pageName.component}
+                key={`${pageName.component}`}
                 path={pageName.href}
                 element={pageName.component}
               />
@@ -64,15 +67,21 @@ function App() {
         </BrowserRouter>
       </div>
 
-      <div className={`toggle-border-${theme}`} />
-      <div className="light-dark-toggle">
-        <FormGroup>
-          <FormControlLabel
-            control={<ThemeSwitcher sx={{ m: 20 }} defaultChecked />}
-            onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-            label=""
-          />
-        </FormGroup>
+      <div className={`toggle-border ${theme}`}>
+        <div className="light-dark-toggle">
+          <FormGroup>
+            <FormControlLabel
+              control={
+                <ThemeSwitcher
+                  sx={{ m: 0 }}
+                  checked={theme === 'dark' ? true : false}
+                />
+              }
+              onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+              label=""
+            />
+          </FormGroup>
+        </div>
       </div>
     </>
   );

@@ -1,0 +1,96 @@
+.dark {
+  button.standard-btn {
+    border: var(--primary-white) 1px solid;
+  }
+
+  .bi-arrow-right {
+    fill: var(--primary-white);
+  }
+
+  button.standard-btn:hover {
+    .button-text {
+      color: var(--primary-black);
+    }
+
+    .bi-arrow-right {
+      fill: var(--primary-black);
+    }
+
+    background-color: var(--primary-white);
+  }
+}
+
+.light {
+  button.standard-btn {
+    border: var(--primary-black) 1px solid;
+  }
+
+  .bi-arrow-right {
+    fill: var(--primary-black);
+  }
+
+  button.standard-btn:hover {
+    .button-text {
+      color: var(--primary-white);
+    }
+
+    .bi-arrow-right {
+      fill: var(--primary-white);
+    }
+
+    background-color: var(--primary-black);
+  }
+}
+
+button.standard-btn {
+  width: fit-content;
+}
+
+button.standard-btn-inverted {
+  background-color: transparent;
+  color: var(--primary-black);
+  border: var(--primary-black) 1px solid;
+}
+
+button.standard-btn-inverted:hover {
+  background-color: var(--primary-black);
+  color: var(--primary-white);
+  border: transparent 1px solid;
+}
+
+button.standard-btn-non-inverted:hover {
+  border: var(--primary-white) 1px solid;
+  background-color: var(--primary-white);
+}
+
+button.standard-btn:hover {
+  width: fit-content;
+}
+
+.button-text-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.button-text {
+  text-align: center;
+  align-self: center;
+  font-family: Niramit;
+  font-size: var(--font-size-xsm);
+  overflow: hidden;
+  padding-bottom: 3px;
+  text-decoration: none;
+}
+
+.bi-arrow-right {
+  text-align: center;
+  align-self: center;
+  overflow: hidden;
+}
+
+.btn:hover {
+  .bi-arrow-right {
+    transform: translateX(4px);
+  }
+}
