@@ -1,6 +1,18 @@
 #contact-page-content {
-  margin: 30px;
-  width: 280px;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 80px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: middle;
+  height: auto;
+  width: auto;
+}
+
+#contact-title {
+  justify-content: center;
 }
 
 #contact-page-name-email {
@@ -12,12 +24,8 @@
 #contact-header-text {
   text-align: center;
   margin-top: 40px;
-}
-
-.contact-page-content-wrapper {
-  display: flex;
-  flex-direction: column;
-  padding-bottom: 50px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 textarea.form-control {
@@ -32,10 +40,6 @@ textarea.form-control {
 
 #contact-form-wrapper {
   margin: 20px;
-}
-
-#modal-alert {
-  
 }
 
 input.input-form,

@@ -4,6 +4,22 @@ body {
   overflow: hidden;
 }
 
+.background-components {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  width: 100dvw;
+  height: 100dvh;
+  z-index: -1;
+  position: absolute;
+}
+
+#app-wrapper {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 //background animations
 @keyframes move-background {
   from {

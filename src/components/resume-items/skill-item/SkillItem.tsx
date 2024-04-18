@@ -20,14 +20,16 @@ function SkillItem({ skillModel, theme }: Props) {
 function renderProficiencyBar(proficiency: number, theme: string) {
   const proficiencyBar = [...Array(5).keys()];
 
-  return proficiencyBar.map((item) =>
+  return proficiencyBar.map((item, index) =>
     item <= proficiency - 1 ? (
       <div
         className={`proficiency-ranking-item proficiency-ranking-item-full ${theme} proficiency-ranking-item-${item}`}
+        key={index}
       ></div>
     ) : (
       <div
         className={`proficiency-ranking-item proficiency-ranking-item-${item}`}
+        key={index}
       ></div>
     )
   );

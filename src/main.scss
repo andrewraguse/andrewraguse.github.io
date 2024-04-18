@@ -89,43 +89,35 @@ body {
 
   h1 {
     font-family: 'Paytone One';
-    font-size: var(--font-size-lg);
   }
 
   h2 {
     font-family: 'Paytone One';
-    font-size: var(--font-size-md);
   }
 
   h3 {
     font-family: Niramit;
     font-weight: 600;
-    font-size: var(--font-size-md);
   }
 
   h4 {
     font-family: Niramit;
     font-weight: 500;
-    font-size: var(--font-size-sm);
   }
 
   p {
-    font-size: var(--font-size-sm);
     font-family: Niramit;
   }
 
   li {
-    font-size: var(--font-size-xsm);
     font-family: Niramit;
   }
 
   a {
-    font-size: var(--font-size-sm);
     font-family: Niramit;
   }
 
   label {
-    font-size: var(--font-size-sm);
     font-family: Niramit;
   }
 
@@ -164,11 +156,57 @@ body {
     font-size: var(--font-size-md);
   }
 
+  h2 {
+    font-size: var(--font-size-sm);
+  }
+
+  h3 {
+    font-size: var(--font-size-sm);
+  }
+
+  h4 {
+    font-size: var(--font-size-sm);
+  }
+
   p {
     font-size: var(--font-size-xsm);
   }
 
   a {
     font-size: var(--font-size-xsm);
+  }
+}
+
+@media only screen and (min-width: 36em) {
+  h1 {
+    font-size: var(--font-size-lg);
+  }
+
+  h2 {
+    font-size: var(--font-size-md);
+  }
+
+  h3 {
+    font-size: var(--font-size-md);
+  }
+
+  h4 {
+    font-size: var(--font-size-sm);
+  }
+
+  p {
+    font-size: var(--font-size-sm);
+  }
+
+  li {
+    font-size: var(--font-size-xsm);
+  }
+
+  a {
+    font-size: var(--font-size-sm);
+  }
+
+  label {
+    font-size: var(--font-size-sm);
   }
 }

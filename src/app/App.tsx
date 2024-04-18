@@ -41,8 +41,8 @@ function App() {
   ];
 
   return (
-    <>
-      <div className="background-components">
+    <div id="app-wrapper">
+      <div id="background-components">
         <div className={`stars stars-${theme}`}></div>
         <div className={`twinkle twinkle-${theme}`} />
         <div className={`moon-sun moon-sun-${theme}`} />
@@ -83,7 +83,7 @@ function App() {
           </FormGroup>
         </div>
       </div>
-    </>
+    </div>
   );
 }
 

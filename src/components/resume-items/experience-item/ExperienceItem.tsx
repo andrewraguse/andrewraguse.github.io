@@ -1,4 +1,4 @@
-import ExperienceModel from "../../../models/ExperienceModel";
+import ExperienceModel from '../../../models/ExperienceModel';
 
 interface Props {
   experienceModel: ExperienceModel;

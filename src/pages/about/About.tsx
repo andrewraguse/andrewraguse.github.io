@@ -13,12 +13,12 @@ function About({ theme }: Props) {
           <h1 id="about" className="animate__animated animate__bounce">
             ABOUT ME
           </h1>
-          <TextBox theme={theme}>
-            <div id="about-me-details-wrapper">
+          <div id="about-page-textbox-wrapper">
+            <TextBox theme={theme} className="about-profile-photo-textbox">
               <div id="photo-and-icon-wrapper">
                 <img
                   id="profile-photo"
-                  src="./IMG_3334.jpeg"
+                  src="./PROFILE_IMG.jpg"
                   alt="self profile photo"
                 />
                 <div id="social-media-icons">
@@ -64,34 +64,85 @@ function About({ theme }: Props) {
                   </a>
                 </div>
               </div>
-
-              <p id="about-me-text">
-                Hello my name is Andrew Raguse and I am from southern
-                california. Some more text about me is that I blah blah blah
-                blah. I really want to fill in this space so I can format this
-                document well.
-                <br />
-                <br />
-                Hello my name is Andrew Raguse and I am from southern
-                california. Some more text about me is that I blah blah blah
-                blah. I really want to fill in this space so I can format this
-                document well.
-                <br />
-                <br />
-                Hello my name is Andrew Raguse and I am from southern
-                california. Some more text about me is that I blah blah blah
-                blah. I really want to fill in this space so I can format this
-                document well.
-                <br />
-                <br />
-                Hello my name is Andrew Raguse and I am from southern
-                california. Some more text about me is that I blah blah blah
-                blah. I really want to fill in this space so I can format this
-                document well.
-                <br />
-              </p>
-            </div>
-          </TextBox>
+            </TextBox>
+            <TextBox theme={theme} className="about-profile-textbox">
+              <div id="photo-and-icon-wrapper-small-format">
+                <img
+                  id="profile-photo-small-format"
+                  src="./PROFILE_IMG_SQUARE.jpg"
+                  alt="self profile photo"
+                />
+                <div id="social-media-icons">
+                  <a
+                    href="https://www.linkedin.com/in/andrew-raguse/"
+                    target="_blank"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="30"
+                      width="30"
+                      className={`social-media-icon social-media-icon-${theme} bi bi-linkedin`}
+                      viewBox="0 0 16 16"
+                    >
+                      <path d={linkedInIconPath} />
+                    </svg>
+                  </a>
+                  <a
+                    href="https://www.instagram.com/drww.ragu/"
+                    target="_blank"
+                  >
+                    {' '}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="30"
+                      width="30"
+                      className={`social-media-icon social-media-icon-${theme} bi bi-instagram`}
+                      viewBox="0 0 16 16"
+                    >
+                      <path d={instagramIconPath} />
+                    </svg>
+                  </a>
+                  <a href="https://github.com/andrewraguse" target="_blank">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="30"
+                      width="30"
+                      className={`social-media-icon social-media-icon-${theme} bi bi-github`}
+                      viewBox="0 0 16 16"
+                    >
+                      <path d={gitHubIconPath} />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+              <div id="about-me-details-wrapper">
+                <p id="about-me-text">
+                  Hi, I'm Drew, a passionate full-stack software engineer from
+                  Orange County, California. I studied Computer Science at UC
+                  Berkeley from 2016 to 2020, and explored a variety of subjects
+                  from Efficient Algorithms to User Interface Design.
+                  <br />
+                  <br />
+                  After graduating, I joined Amazon as a Software Development
+                  Engineer, where I led projects in Java and AWS, spearheading
+                  initiatives to enhance and scale services. From leading A/B
+                  experiments to pioneering infrastructure setups, I've thrived
+                  in challenging environments, consistently pushing boundaries
+                  and delivering impactful results
+                  <br />
+                  <br />
+                  Last year, I embarked on a year-long sabbatical, immersing
+                  myself in nature in Yellowstone National Park and exploring
+                  Latin America. I also self-taught React to build my personal
+                  portfolio, highlighting my commitment to continuous learning.
+                  With a blend of technical expertise and a spirit for
+                  exploration, I'm eager to tackle new challenges and make a
+                  meaningful impact.
+                  <br />
+                </p>
+              </div>
+            </TextBox>
+          </div>
         </div>
       </div>
     </>

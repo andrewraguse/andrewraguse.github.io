@@ -2,8 +2,8 @@
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 0px;
   padding-bottom: 80px;
+  padding-top: 20px;
   width: auto;
   vertical-align: middle;
   display: flex;
@@ -14,15 +14,39 @@
 }
 
 #about-me-details-wrapper {
-  min-width: 250px;
   display: flex;
   flex-direction: column;
 }
 
-#profile-photo {
-  width: 200px;
-  height: auto;
+#about-page-textbox-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-profile-photo-textbox {
+  display: none;
+  visibility: hidden;
+  width: 0;
+  height: 0;
+}
+
+#photo-and-icon-wrapper-small-format {
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#profile-photo-small-format {
   border-radius: 50%;
+  width: 250px;
+  padding: 20px;
+}
+
+#profile-photo {
+  width: 300px;
+  height: auto;
+  border-radius: 5%;
   margin: 20px;
   align-self: center;
 }
@@ -31,6 +55,7 @@
   margin: 20px;
   text-align: left;
   max-width: 30em;
+  font-size: var(--font-size-xsm);
 }
 
 #social-media-icons {
@@ -81,6 +106,22 @@
     flex-direction: column;
     display: flex;
   }
+
+  #about-page-textbox-wrapper {
+    flex-direction: column;
+  }
+
+  .about-profile-photo-textbox {
+    display: none;
+  }
+
+  #photo-and-icon-wrapper-small-format {
+    visibility: visible;
+  }
+
+  #profile-photo-small-format {
+    width: 300px;
+  }
 }
 
 /* Medium devices such as tablets (768px and up) */
@@ -90,12 +131,28 @@
   }
 
   #profile-photo {
-    width: 200px;
+    width: 300px;
   }
 
   #about-me-details-wrapper {
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
+  }
+
+  #about-page-textbox-wrapper {
+    flex-direction: column;
+  }
+
+  .about-profile-photo-textbox {
+    display: none;
+  }
+
+  #photo-and-icon-wrapper-small-format {
+    visibility: visible;
+  }
+
+  #profile-photo-small-format {
+    width: 300px;
   }
 }
 
@@ -106,12 +163,27 @@
   }
 
   #profile-photo {
-    width: 250px;
+    width: 300px;
   }
 
   #primary-content {
-    flex-direction: row;
+    flex-direction: column;
     display: flex;
+  }
+
+  #about-page-textbox-wrapper {
+    flex-direction: row;
+  }
+
+  .about-profile-photo-textbox {
+    display: block;
+    visibility: visible;
+    width: auto;
+    height: auto;
+  }
+
+  #photo-and-icon-wrapper-small-format {
+    display: none;
   }
 }
 
@@ -126,7 +198,28 @@
   }
 
   #about-me-details-wrapper {
+    width: 100%;
+  }
+
+  #about-me-details-wrapper {
     display: flex;
+    flex-direction: column;
+  }
+
+  #about-page-textbox-wrapper {
     flex-direction: row;
+  }
+
+  .about-profile-photo-textbox {
+    display: block;
+    visibility: visible;
+    width: auto;
+    height: auto;
+  }
+
+  #photo-and-icon-wrapper-small-format {
+    visibility: hidden;
+    width: 0;
+    height: 0;
   }
 }

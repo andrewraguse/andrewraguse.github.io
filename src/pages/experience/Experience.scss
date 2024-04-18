@@ -6,14 +6,40 @@
   text-align: center;
   margin-top: auto;
   margin-bottom: auto;
-  padding: 0px;
   padding-bottom: 80px;
-  padding-top: 40px;
+  padding-top: 20px;
   width: 1000px;
   display: flex;
   flex-direction: column;
   margin-left: 20px;
   margin-right: 20px;
+}
+
+#experience-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.download-icon {
+  margin-top: 10px;
+}
+
+.download-icon-light {
+  fill: var(--dark-background);
+}
+
+.download-icon-dark {
+  fill: var(--light-background-secondary);
+}
+
+.download-icon-light:hover {
+  fill: var(--dark-border-color);
+}
+
+.download-icon-dark:hover {
+  fill: var(--dark-border-color);
 }
 
 #experience-page-content-textbox-group {
