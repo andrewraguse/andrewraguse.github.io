@@ -23,6 +23,10 @@ a.nav-link {
   color: var(--primary-white);
 }
 
+.navbar-nav-dark a.nav-link:hover {
+  color: var(--primary-white);
+}
+
 /* change navbar background on collapse */
 @media (max-width: 36em) {
   .navbar-collapse.dark.collapse {

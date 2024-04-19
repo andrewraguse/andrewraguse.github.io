@@ -27,7 +27,7 @@ function Experience({ theme }: Props) {
             id="experience-header"
             className="animate__animated animate__bounce"
           >
-            EXPERIENCE &nbsp;
+            EXPERIENCE&nbsp;&nbsp;
             <a
               href="./Andrew-Raguse-Resume.pdf"
               download={'./Andrew-Raguse-Resume.pdf'}

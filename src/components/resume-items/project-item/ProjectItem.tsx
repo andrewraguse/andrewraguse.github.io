@@ -7,7 +7,9 @@ interface Props {
 function ProjectItem({ projectModel }: Props) {
   return (
     <div className="experience-resume-item">
-      <h4>{projectModel.project}</h4>
+      <h4>
+        {projectModel.project} <i>{`(${projectModel.year})`}</i>
+      </h4>
       <ul>
         {projectModel.descriptions.map((description, index) => (
           <li

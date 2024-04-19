@@ -1,8 +1,8 @@
+import PositionModel from './PositionModel';
+
 interface ExperienceModel {
   company: string;
-  position: string;
-  startDate: string;
-  endDate: string;
+  positions: PositionModel[];
   descriptions: string[];
 }
 

@@ -1,5 +1,5 @@
-import EducationModel from "../../../models/EducationModel";
-import "./EducationItem.scss";
+import EducationModel from '../../../models/EducationModel';
+import './EducationItem.scss';
 
 interface Props {
   educationModel: EducationModel;
