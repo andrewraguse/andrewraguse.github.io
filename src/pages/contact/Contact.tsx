@@ -125,7 +125,5 @@ function Contact({ theme }: Props) {
 const successModalMessage = 'Your message has been sent!';
 const errorModalMessage =
   'Therre was a problem sending your message. Please try again.';
-const messageLimitExceededModalMessage =
-  'Sorry, you have sent the maximum number of messages today, please try again tomorrow.';
 
 export default Contact;
