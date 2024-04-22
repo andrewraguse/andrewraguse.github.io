@@ -22,9 +22,9 @@ function Contact({ theme }: Props) {
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
   const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
-  const recaptchaRef = useRef(null);
+  const recaptchaRef = useRef<ReCAPTCHA>(null);
 
-  const handleRecaptchaChange = (token: string) => {
+  const handleRecaptchaChange = (token: string | null) => {
     setRecaptchaToken(token); // Update the token when reCAPTCHA is completed
   };
 
