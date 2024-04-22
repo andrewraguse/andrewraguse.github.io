@@ -4,6 +4,7 @@ import TextBox from '../../components/textbox/TextBox';
 import StandardButton from '../../components/buttons/standard-button/StandardButton';
 import emailjs from '@emailjs/browser';
 import { Modal } from 'react-bootstrap';
+import ReCAPTCHA from 'react-google-recaptcha';
 
 interface Props {
   theme: string;
@@ -20,30 +21,50 @@ function Contact({ theme }: Props) {
   const form = useRef(document.createElement('form') as HTMLFormElement);
   const [showModal, setShowModal] = useState(false);
   const [modalMessage, setModalMessage] = useState('');
+  const [recaptchaToken, setRecaptchaToken] = useState<string | null>(null);
+  const recaptchaRef = useRef(null);
+
+  const handleRecaptchaChange = (token: string) => {
+    setRecaptchaToken(token); // Update the token when reCAPTCHA is completed
+  };
 
   const sendEmail = (e: FormEvent) => {
     e.preventDefault();
-    emailjs
-      .sendForm(
-        'service_k7snms6',
-        'template_yev6pmo',
-        form.current,
-        'TvHHQV2wGllq9UwJo'
-      )
-      .then(
-        (result) => {
-          clearInputs();
-          setModalMessage(successModalMessage);
-          setShowModal(true);
-          console.log(result.text);
-        },
-        (error) => {
-          clearInputs();
-          setModalMessage(errorModalMessage);
-          setShowModal(true);
-          console.log(error.text);
-        }
-      );
+    if (!recaptchaToken) {
+      setModalMessage(reCaptchaModalMessage);
+      setShowModal(true);
+      console.log('Must complete the required reCaptcha.');
+    } else {
+      emailjs
+        .sendForm(
+          'service_k7snms6',
+          'template_yev6pmo',
+          form.current,
+          'TvHHQV2wGllq9UwJo'
+        )
+        .then(
+          (result) => {
+            clearInputs();
+            setModalMessage(successModalMessage);
+            setShowModal(true);
+            console.log(result.text);
+            if (recaptchaRef.current) {
+              recaptchaRef.current.reset(); // Clear the reCAPTCHA
+              setRecaptchaToken(null); // Reset token to ensure reCAPTCHA is required again
+            }
+          },
+          (error) => {
+            clearInputs();
+            setModalMessage(errorModalMessage);
+            setShowModal(true);
+            console.log(error.text);
+            if (recaptchaRef.current) {
+              recaptchaRef.current.reset(); // Clear the reCAPTCHA
+              setRecaptchaToken(null); // Reset token to ensure reCAPTCHA is required again
+            }
+          }
+        );
+    }
   };
 
   function clearModal() {
@@ -94,6 +115,13 @@ function Contact({ theme }: Props) {
                   minLength={1}
                   maxLength={500}
                 />
+                <div id="recaptcha">
+                  <ReCAPTCHA
+                    sitekey="6Ld_wMMpAAAAAHwhlGkwGzZ089vV27EgnY4q5sHv" // The reCAPTCHA site key
+                    onChange={handleRecaptchaChange}
+                    ref={recaptchaRef} // Assign reference to reCAPTCHA
+                  />
+                </div>
                 <Modal
                   className="standard-text-dark"
                   show={showModal}
@@ -124,6 +152,8 @@ function Contact({ theme }: Props) {
 
 const successModalMessage = 'Your message has been sent!';
 const errorModalMessage =
-  'Therre was a problem sending your message. Please try again.';
+  'There was a problem sending your message. Please try again.';
+const reCaptchaModalMessage =
+  'Please complete the required reCaptcha form to send your message.';
 
 export default Contact;
