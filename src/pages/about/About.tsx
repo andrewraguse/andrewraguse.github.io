@@ -117,28 +117,29 @@ function About({ theme }: Props) {
               </div>
               <div id="about-me-details-wrapper">
                 <p id="about-me-text">
-                  Hi, I'm Drew, a passionate full-stack software engineer from
-                  Orange County, California. I studied Computer Science at UC
-                  Berkeley from 2016 to 2020, and explored a variety of subjects
-                  from Efficient Algorithms to User Interface Design.
+                  Hi, I'm Drew, a passionate full-stack software engineer based
+                  in New York City. In 2020, I joined Amazon as a Software
+                  Development Engineer, where I led projects in Java and AWS,
+                  spearheading initiatives to scale services. I was responsible
+                  for driving A/B experiments and pioneering new infrastructure
+                  setups, consistently delivering impactful results in
+                  challenging environments.
                   <br />
                   <br />
-                  After graduating, I joined Amazon as a Software Development
-                  Engineer, where I led projects in Java and AWS, spearheading
-                  initiatives to enhance and scale services. From leading A/B
-                  experiments to pioneering infrastructure setups, I've thrived
-                  in challenging environments, consistently pushing boundaries
-                  and delivering impactful results
+                  I graduated from UC Berkeley in 2020 with a degree in Computer
+                  Science, where I explored various fields from Efficient
+                  Algorithms to UI Design. This experience shaped my passion for
+                  solving complex problems while maintaining a seamless user
+                  experience.
                   <br />
                   <br />
-                  Last year, I embarked on a year-long sabbatical, immersing
-                  myself in nature in Yellowstone National Park and exploring
-                  Latin America. I also self-taught React to build my personal
-                  portfolio, highlighting my commitment to continuous learning.
-                  With a blend of technical expertise and a spirit for
-                  exploration, I'm eager to tackle new challenges and make a
-                  meaningful impact.
-                  <br />
+                  Last year, I took a year-long sabbatical to travel and
+                  reconnect with nature, travelling all throughout Latin
+                  America. During this time, I self-taught React and built my
+                  personal website, reinforcing my commitment to continuous
+                  learning and technical growth. Now, I'm eager to apply my
+                  skills and experience to new challenges and contribute to
+                  meaningful projects.
                 </p>
               </div>
             </TextBox>

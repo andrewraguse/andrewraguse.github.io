@@ -1,7 +1,7 @@
 .default-text-box {
-  border-width: 8px;
+  border-width: 2px;
   border-radius: 20px;
-  border-style: dashed;
+  border-style: solid;
   overflow: hidden;
   margin-top: 20px;
   margin-left: 10px;
@@ -17,10 +17,4 @@
 .default-text-box.light {
   background-color: var(--light-background-secondary);
   border-color: var(--dark-border-color);
-}
-
-@media only screen and (max-width: 48em) {
-  .default-text-box {
-    border-width: var(--text-box-border-size-sm);
-  }
 }

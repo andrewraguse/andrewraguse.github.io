@@ -72,7 +72,6 @@ export const educationExperienceContent = [
   {
     school: 'University of California, Berkeley',
     graduationDate: 'May 2020',
-    GPA: '3.55',
     major: 'Computer Science',
   },
 ];

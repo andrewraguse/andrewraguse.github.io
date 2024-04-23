@@ -4,6 +4,7 @@
   //font styles
   --font-size-lg: 60px;
   --font-size-md: 40px;
+  --font-size-md-sm: 30px;
   --font-size-sm-md: 25px;
   --font-size-sm: 18px;
   --font-size-xsm: 16px;
@@ -92,7 +93,8 @@ body {
   }
 
   h2 {
-    font-family: 'Paytone One';
+    font-family: Niramit;
+    font-weight: 800;
   }
 
   h3 {
@@ -157,15 +159,15 @@ body {
   }
 
   h2 {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-md-sm);
   }
 
   h3 {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-sm-md);
   }
 
   h4 {
-    font-size: var(--font-size-sm);
+    font-size: var(--font-size-xsm);
   }
 
   p {
@@ -187,7 +189,7 @@ body {
   }
 
   h3 {
-    font-size: var(--font-size-md);
+    font-size: var(--font-size-md-sm);
   }
 
   h4 {
