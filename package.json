@@ -2,7 +2,7 @@
   "name": "personalsite",
   "private": true,
   "version": "0.0.0",
-  "homepage": "drew-codes.com",
+  "homepage": "https://andrewraguse.github.io/personalSite/",
   "type": "module",
   "scripts": {
     "dev": "vite",
