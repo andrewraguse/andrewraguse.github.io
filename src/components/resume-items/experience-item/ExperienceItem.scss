@@ -1,4 +1,14 @@
-.position-item {
+#position-item {
   align-items: end;
   justify-self: end;
+}
+
+#experience-title-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+#experience-date {
+  align-self: center;
+  padding-left: 10px;
 }

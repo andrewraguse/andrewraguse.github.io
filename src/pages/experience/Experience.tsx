@@ -29,8 +29,8 @@ function Experience({ theme }: Props) {
           >
             EXPERIENCE&nbsp;&nbsp;
             <a
-              href="./Andrew-Raguse-Resume.pdf"
-              download={'./Andrew-Raguse-Resume.pdf'}
+              href="./Andrew_Raguse_Resume_2024-website.pdf"
+              download={'./Andrew_Raguse_Resume_2024-website.pdf'}
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"

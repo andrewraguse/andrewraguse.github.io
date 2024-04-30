@@ -1,52 +1,51 @@
 export const workExperienceContent = [
   {
     company: 'Amazon',
+    startDate: 'Sep 2020',
+    endDate: 'Jun 2023',
     positions: [
       {
         title: 'Software Development Engineer II',
-        startDate: 'Mar 2023',
-        endDate: 'Jun 2023',
       },
       {
         title: 'Software Development Engineer I',
-        startDate: 'Sep 2020',
-        endDate: 'Mar 2023',
       },
     ],
     descriptions: [
-      'Led initiatives within AWS to enhance, scale, and maintain a high performance service handling 8,000+ requests per second, ensuring seamless delivery of contextually relevant visual content to customer devices',
-      'Contributed to the acquisition of 4.5 million active users for Alexa Home Productivity features by spearheading the implementation of A/B experiments using Java, SQL, and Alexa Presentation Language',
-      'Launched over 25 experiments to all Alexa Home Productivity customers and developed comprehensive metrics to conduct indepth data analysis',
-      'Collaborated cross-functionally to ideate, design, and deploy innovative features, fostering seamless user experiences across platforms',
-      'Pioneered infrastructure setup for initial Alexa Home Productivity experiments on devices with screens, successfully executing experimental runs to drive product refinement',
+      'Led extensive, cross-team scalability efforts of an AWS service that provides seamless delivery of visual content to Alexa screen devices, increasing throughput from 400 to 8,000 transactions per second. Ensured high performance by conducting load and stress tests, provisioning additional hosts and threads, and implementing dynamic content selection for multiple content cards.',
+      'As a cross-team engineer working across 5+ microservice codebases, I contributed to 12.2 million annualized dialogs, an increase of 250,000 in monthly active users, 580,000 daily active users, and a high six-figure amount in annual revenue for the Alexa Home Productivity team.',
+      'Developed scalable and extendable GUI templates, data schemas, and rendering logic across microservices (alarms, reminders, kitchen), enabling the team to run visual experiments on Alexa screen devices. Created new APIs and established cross-domain handoffs to facilitate seamless event creation, deletion, and editing across different domains.',
+      'Designed the infrastructure for end-to-end integration testing to support Alexa screen device A/B experiments, incorporating API mocking, visual template data validation, cross-domain handoff validation and automated AWS CodePipeline testing to ensure reliability and scalability.',
+      'Enhanced operational excellence by fine-tuning our team’s service performance monitors, adding promotion blockers, rollback alarms, and experiment-specific dashboards. Developed integration testing for our service’s upsell card content and designed an override system to support automated pipeline testing and user acceptance testing.',
+      'Onboarded and mentored newer team members on backend architecture, guiding them through the end-to-end experiment development process. Authored comprehensive documentation on service onboarding, load testing, integration testing, and experiment creation to facilitate knowledge sharing and support the team’s growth.',
     ],
   },
   {
     company: 'InjectSense',
+    startDate: 'Jun 2018',
+    endDate: 'Aug 2018',
     positions: [
       {
         title: 'Artificial Intelligence Intern',
-        startDate: 'Jun 2018',
-        endDate: 'Aug 2018',
       },
     ],
     descriptions: [
-      'Collaborated with Software Engineers to advance AI in medical applications',
-      'Assisted in devising ML strategies for medical data analysis, gaining practical AI expertise',
+      'Conducted competitive market research on AI applications in the medical field to understand how data was collected, utilized, and which machine learning practices were used in similar medical technologies.',
+      'Collaborated with Software Engineers to develop a strategy for integrating AI and machine learning practices into the company’s medical data analysis processes.',
     ],
   },
   {
     company: 'Inphi Corporation',
+    startDate: 'Jun 2017',
+    endDate: 'Jul 2017',
     positions: [
       {
         title: 'Software Engineering Intern',
-        startDate: 'Jun 2017',
-        endDate: 'Jul 2017',
       },
     ],
     descriptions: [
-      'Streamlined data management using Python and SQL, consolidating scattered test information into a standardized Excel format',
-      'Engineered an internal database for streamlined access to chip data, enhancing report generation and analysis capabilities',
+      'Streamlined data management using Python and SQL, consolidating scattered test information into a standardized Excel format.',
+      'Engineered an internal database for streamlined access to chip data, enhancing report generation and analysis capabilities.',
     ],
   },
 ];
@@ -54,11 +53,11 @@ export const workExperienceContent = [
 export const activityExperienceContent = [
   {
     company: 'The Berkeley Forum',
+    startDate: 'Sep 2016',
+    endDate: 'May 2019',
     positions: [
       {
         title: 'Vice President of Communications',
-        startDate: 'Sep 2016',
-        endDate: 'May 2019',
       },
     ],
     descriptions: [
@@ -86,6 +85,18 @@ export const skillExperienceContent = [
     proficiency: 5,
   },
   {
+    skill: 'JavaScript',
+    proficiency: 4,
+  },
+  {
+    skill: 'TypeScript',
+    proficiency: 4,
+  },
+  {
+    skill: 'HTML/CSS',
+    proficiency: 4,
+  },
+  {
     skill: 'React',
     proficiency: 4,
   },
@@ -94,7 +105,15 @@ export const skillExperienceContent = [
     proficiency: 4,
   },
   {
-    skill: 'AWS',
+    skill: 'AWS EC2',
+    proficiency: 4,
+  },
+  {
+    skill: 'AWS S3',
+    proficiency: 4,
+  },
+  {
+    skill: 'AWS DynamoDB',
     proficiency: 4,
   },
   {
@@ -106,7 +125,7 @@ export const skillExperienceContent = [
     proficiency: 3,
   },
   {
-    skill: 'C',
+    skill: 'C++',
     proficiency: 3,
   },
 ];
@@ -116,14 +135,8 @@ export const projectExperienceContent = [
     project: 'Personal Website',
     year: '2024',
     descriptions: [
-      'Illustrated, designed, and constructed a dynamic personal portfo- lio website from scratch utilizing React, Adobe Creative Suite, and Figma',
-    ],
-  },
-  {
-    project: 'Minecraft Shader',
-    year: '2020',
-    descriptions: [
-      'Employed advanced techniques such as Blinn-Phong Shading, Sinusoidal Wave Modeling, and Transparency equations to develop a lifelike water rendering system within Minecraft using OpenGL',
+      'Illustrated, designed, and constructed a personal portfolio website from scratch utilizing React, Adobe Creative Suite, and Figma.',
+      'Integrated contact forms with EmailJS, optimized the website for performance and accessibility, and deployed it to GitHub Pages.',
     ],
   },
 ];
