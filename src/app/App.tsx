@@ -53,7 +53,7 @@ function App() {
         </div>
       </div>
       <div className={`foreground-components  ${theme}`}>
-        <BrowserRouter basename="/personalSite/">
+        <BrowserRouter basename="/">
           <NavBar theme={theme} pageNames={pageNames} />
           <Routes>
             {pageNames.map((pageName) => (
