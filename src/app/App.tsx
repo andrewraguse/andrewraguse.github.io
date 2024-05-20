@@ -3,6 +3,7 @@ import NavBar from '../components/navbar/NavBar';
 import Home from '../pages/home/Home';
 import Contact from '../pages/contact/Contact';
 import Experience from '../pages/experience/Experience';
+import Projects from '../pages/projects/Projects';
 import About from '../pages/about/About';
 import { Route, Routes, BrowserRouter } from 'react-router-dom';
 import { useState } from 'react';
@@ -32,6 +33,11 @@ function App() {
       href: '/experience',
       name: 'experience',
       component: <Experience theme={theme} />,
+    },
+    {
+      href: '/projects',
+      name: 'projects',
+      component: <Projects theme={theme} />,
     },
     {
       href: '/contact',

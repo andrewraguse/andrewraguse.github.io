@@ -104,14 +104,6 @@ function Experience({ theme }: Props) {
                 </div>
               </TextBox>
               <TextBox theme={theme}>
-                <div className="experience-section-wrapper project-experience-section-wrapper">
-                  <h3 className="experience-section-header">Projects</h3>
-                  {projectExperienceContent.map((projectExperience, index) => (
-                    <ProjectItem projectModel={projectExperience} key={index} />
-                  ))}
-                </div>
-              </TextBox>
-              <TextBox theme={theme}>
                 <div className="experience-section-wrapper course-experience-section-wrapper">
                   <h3 className="experience-section-header">
                     Relevant Course Work

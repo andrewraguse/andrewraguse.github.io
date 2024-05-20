@@ -1,0 +1,39 @@
+#projects-page-content-wrapper {
+  text-align: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  padding-bottom: 80px;
+  padding-top: 20px;
+  width: auto;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: auto;
+}
+
+#projects-page-textbox-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-experience-section-wrapper {
+  max-width: 500px;
+}
+
+/* Small devices such as large phones (575px and up) */
+@media only screen and (min-width: 36em) {
+}
+
+/* Medium devices such as tablets (768px and up) */
+@media only screen and (min-width: 48em) {
+}
+
+/* Large devices such as laptops (1024px and up) */
+@media only screen and (min-width: 64em) {
+}
+
+/* Largest devices such as desktops (1280px and up) */
+@media only screen and (min-width: 80em) {
+}

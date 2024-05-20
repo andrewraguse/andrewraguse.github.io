@@ -66,21 +66,21 @@
 }
 
 .experience-column1 {
-  max-width: 400px;
+  width: 90vw;
 }
 
 .experience-column2 {
-  max-width: 400px;
+  width: 90vw;
 }
 
 /* Small devices such as large phones (640px and up) */
 @media only screen and (min-width: 36em) {
   .experience-column1 {
-    max-width: 700px;
+    width: 550px;
   }
 
   .experience-column2 {
-    max-width: 700px;
+    width: 550px;
   }
 
   #experience-page-content-textbox-group {
@@ -96,11 +96,11 @@
 /* Medium devices such as tablets (768px and up) */
 @media only screen and (min-width: 48em) {
   .experience-column1 {
-    max-width: 800px;
+    width: 700px;
   }
 
   .experience-column2 {
-    max-width: 800px;
+    width: 700px;
   }
 
   #experience-page-content-textbox-group {
@@ -116,11 +116,11 @@
 /* Large devices such as laptops (1024px and up) */
 @media only screen and (min-width: 64em) {
   .experience-column1 {
-    max-width: 400px;
+    width: 400px;
   }
 
   .experience-column2 {
-    max-width: 650px;
+    width: 650px;
   }
 
   #experience-page-content-textbox-group {
@@ -137,7 +137,7 @@
   }
 
   .experience-column2 {
-    max-width: 650px;
+    width: 650px;
   }
 
   #experience-page-content-textbox-group {
