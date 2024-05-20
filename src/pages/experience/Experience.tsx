@@ -6,12 +6,10 @@ import {
   workExperienceContent,
   educationExperienceContent,
   skillExperienceContent,
-  projectExperienceContent,
   activityExperienceContent,
   courseExperienceContent,
 } from './ExperienceContent';
 import SkillItem from '../../components/resume-items/skill-item/SkillItem';
-import ProjectItem from '../../components/resume-items/project-item/ProjectItem';
 import CourseItem from '../../components/resume-items/course-item/CourseItem';
 
 interface Props {
