@@ -130,17 +130,6 @@ export const skillExperienceContent = [
   },
 ];
 
-export const projectExperienceContent = [
-  {
-    project: 'Personal Website',
-    year: '2024',
-    descriptions: [
-      'Illustrated, designed, and constructed a personal portfolio website from scratch utilizing React, Adobe Creative Suite, and Figma.',
-      'Integrated contact forms with EmailJS, optimized the website for performance and accessibility, and deployed it to GitHub Pages.',
-    ],
-  },
-];
-
 export const courseExperienceContent = [
   {
     courseNumber: 'CS61A',
