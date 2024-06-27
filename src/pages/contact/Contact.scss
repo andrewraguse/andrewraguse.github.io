@@ -43,7 +43,9 @@ textarea.form-control {
 }
 
 input.dark.input-form,
-textarea.dark.input-form {
+textarea.dark.input-form,
+input.light.input-form,
+textarea.light.input-form {
   color: var(--primary-black);
 }
 
