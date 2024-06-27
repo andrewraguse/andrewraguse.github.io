@@ -42,6 +42,11 @@ textarea.form-control {
   margin: 20px;
 }
 
+input.dark.input-form,
+textarea.dark.input-form {
+  color: var(--primary-black);
+}
+
 input.input-form,
 textarea.input-form {
   margin-bottom: 20px;
